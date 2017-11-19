@@ -28,11 +28,9 @@ namespace Parking_Meter
             this.InitializeComponent();
         }
 
-        private async void button_Click(object sender, RoutedEventArgs e)
+        private void button_Click_1(object sender, RoutedEventArgs e)
         {
-            MediaElement mediaElement = new MediaElement();
-            //Can use overloaded method of navigate to add animations
-            this.Frame.Navigate(typeof(NavigatePage),null, new DrillInNavigationTransitionInfo());
+            this.Frame.Navigate(typeof(NavigatePage));
         }
     }
 }

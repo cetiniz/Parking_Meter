@@ -373,8 +373,8 @@
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\HomePage.png">
       <PackagePath>Assets\HomePage.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\CS 4HC3 assignment 2 - parking meter mockup-02.png">
-      <PackagePath>Assets\CS 4HC3 assignment 2 - parking meter mockup-02.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\MainMenu.png">
+      <PackagePath>Assets\MainMenu.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
