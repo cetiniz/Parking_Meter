@@ -111,7 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\HomePage.png" />
-    <Content Include="Assets\CS 4HC3 assignment 2 - parking meter mockup-02.png" />
+    <Content Include="Assets\MainMenu.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

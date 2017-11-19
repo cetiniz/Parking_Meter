@@ -11,13 +11,13 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="image" HorizontalAlignment="Center" Height="1074.518" VerticalAlignment="Center" Width="1566.888" Source="/Assets/HomePage.png" RenderTransformOrigin="0.5,0.5" Margin="3.051,-0.077,-54.939,-0.441" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:ConnectionId='1' x:Name="image" HorizontalAlignment="Center" Height="1074.518" VerticalAlignment="Center" Width="1566.888" Source="/Assets/HomePage.png" RenderTransformOrigin="0.5,0.5" Margin="3.051,-0.077,-54.939,-0.441" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="-0.01"/>
             </Image.RenderTransform>
         </Image>
 
-        <Button x:Name="button" HorizontalAlignment="Left" Margin="580.82,411.025,0,0" VerticalAlignment="Top" Height="153.172" Width="282.884" Click="button_Click" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Button x:ConnectionId='2' x:Name="button" HorizontalAlignment="Left" Margin="580.82,411.025,0,0" VerticalAlignment="Top" Height="153.172" Width="282.884"                      RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-0.545"/>
             </Button.RenderTransform>
@@ -25,3 +25,4 @@
 
     </Grid>
 </Page>
+
