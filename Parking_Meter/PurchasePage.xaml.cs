@@ -22,9 +22,19 @@ namespace Parking_Meter
     /// </summary>
     public sealed partial class PurchasePage : Page
     {
+        int min, hours;
+        double price;
+
         public PurchasePage()
         {
             this.InitializeComponent();
+            this.min = 30;
+            this.hours = 0;
+            this.price = 1.5;
+
+            this.computePrice();
+            minutesBox.Text = "" + this.min;
+            hoursBox.Text = "" + this.hours;
         }
 
         private void goBack(object sender, RoutedEventArgs e)
@@ -40,6 +50,59 @@ namespace Parking_Meter
         private void goHelp(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void goChoosePayment(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ChoosePaymentPage))
+        }
+
+
+
+        public double getPrice() { return this.price; }
+
+
+
+        private void incH(object sender, RoutedEventArgs e)
+        {
+            this.hours++;
+            computePrice();
+            minutesBox.Text = "" + this.min;
+            hoursBox.Text = "" + this.hours;
+        }
+
+        private void decH(object sender, RoutedEventArgs e)
+        {
+            if (this.hours > 1) this.hours--;
+            if (this.hours == 1 && this.min > 30) this.hours--;
+            computePrice();
+            minutesBox.Text = "" + this.min;
+            hoursBox.Text = "" + this.hours;
+        }
+
+        private void incM(object sender, RoutedEventArgs e)
+        {
+            this.min += 5;
+            if (this.min == 60) { this.min = 0; this.hours++; }
+            computePrice();
+            minutesBox.Text = "" + this.min;
+            hoursBox.Text = "" + this.hours;
+        }
+
+        private void decM(object sender, RoutedEventArgs e)
+        {
+            if (this.min == 30 && this.hours == 0) { }
+            else if (this.min == 0 && this.hours >= 1) { this.min = 55; this.hours--; }
+            else this.min -= 5;
+            computePrice();
+            minutesBox.Text = "" + this.min;
+            hoursBox.Text = "" + this.hours;
+        }
+
+        private void computePrice()
+        {
+            this.price = this.min * 0.05 + this.hours * 60 * 0.05;
+            priceBox.Text = "$ " + this.price;
         }
     }
 }
