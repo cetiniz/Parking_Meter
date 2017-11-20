@@ -1,34 +1,12 @@
 WinMetadata\Windows.winmd
-Assets\ButtonSelect-19.png
-Assets\ButtonSelect-20.png
-Assets\Choose parking time_Printing ticket.png
-Assets\Choose parking time-01.png
-Assets\Choose parking time-02.png
-Assets\Choose parking time-03.png
-Assets\Choose parking time-04.png
-Assets\Choose parking time-05.png
-Assets\Choose parking time-06.png
-Assets\Choose parking time-07.png
-Assets\Choose parking time-08.png
-Assets\Choose parking time-09.png
-Assets\Choose parking time-10.png
-Assets\Choose parking time-11.png
-Assets\Choose parking time-12.png
-Assets\Choose parking time-13.png
-Assets\Choose parking time-15.png
-Assets\Choose parking time-16.png
-Assets\Choose parking time-17.png
-Assets\Choose parking time-18.png
-Assets\HomePage.png
-Assets\incr_decr_time_buttons-18.png
-Assets\incr_decr_time_buttons-19.png
 Assets\LockScreenLogo.scale-200.png
-Assets\MainMenu.png
-Assets\MenuPage-02-02-02.png
+Assets\MenuPage.png
+Assets\PurchasePage.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
 Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+Assets\StartPage.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 Parking_Meter.xr.xml
