@@ -40,13 +40,13 @@
                 Height="70" Width="100" 
                 Margin="-100,-100,-850,240"
                 Opacity="1" 
-                Click="decH"/>
+                Click="incM"/>
         <Button x:Name="minInc" Content="" 
                 HorizontalAlignment="Center" VerticalAlignment="Center" 
                 Height="70" Width="100" 
                 Margin="-100,-100,610,-150"
                 Opacity="1" 
-                Click="incM"/>
+                Click="decH"/>
         <Button x:Name="minDec" Content="" 
                 HorizontalAlignment="Center" VerticalAlignment="Center" 
                 Height="70" Width="100"
@@ -54,6 +54,31 @@
                 Opacity="1" 
                 Click="decM"/>
 
+        <Button x:Name="proceed" Content="" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" 
+                Height="70" Width="100"
+                Margin="-100,-100,-850,-150"
+                Opacity="1" 
+                Click="goChoosePayment"/>
+
+
+        <TextBlock x:Name="hoursBox"
+                   Width="100" Height="60"
+                   Foreground="White" FontFamily="Segoe UI Light" FontSize="60"
+                   HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Margin="255,255,0,0" TextWrapping="Wrap"/>
+
+        <TextBlock x:Name="minutesBox"
+                   Width="100" Height="60"
+                   Foreground="White" FontFamily="Segoe UI Light" FontSize="60"
+                   HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Margin="985,255,0,0" TextWrapping="Wrap" />
+
+        <TextBlock x:Name="priceBox"
+                   Width="300" Height="80"
+                   Foreground="White" FontFamily="Segoe UI Light" FontSize="60"
+                   HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Margin="390,490,0,0" TextWrapping="Wrap" />
 
     </Grid>
 </Page>
