@@ -8,46 +8,46 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image x:Name="image" 
+        <Image x:ConnectionId='1' x:Name="image" 
                HorizontalAlignment="Left" VerticalAlignment="Top"
                Height="auto"  Width="auto" 
                Source="Assets/ChoosePaymentPage.png"/>
-        <Button x:Name="back" Content="" 
+        <Button x:ConnectionId='2' x:Name="back" Content="" 
                 HorizontalAlignment="Left"  VerticalAlignment="Bottom" 
                 Height="80" Width="250" 
                 Opacity="1" 
-                Click="goBack"/>
-        <Button x:Name="cancel" Content="" 
+                              />
+        <Button x:ConnectionId='3' x:Name="cancel" Content="" 
                 HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                 Height="80" Width="220" 
                 Opacity="1" 
-                Click="goStart"/>
-        <Button x:Name="help" Content="" 
+                               />
+        <Button x:ConnectionId='4' x:Name="help" Content="" 
                 HorizontalAlignment="Right" VerticalAlignment="Bottom" 
                 Height="80" Width="200" 
                 Opacity="1" 
-                Click="goHelp"/>
+                              />
 
-        <Button x:Name="purchase" Content="" 
+        <Button x:ConnectionId='5' x:Name="purchase" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
                 Height="100" Width="500" 
                 Margin="-100,-100,-70,130"
                 Opacity="1" 
-                Click="goCash"/>
-        <Button x:Name="add" Content="" 
+                              />
+        <Button x:ConnectionId='6' x:Name="add" Content="" 
                 HorizontalAlignment="Center" VerticalAlignment="Center" 
                 Height="100" Width="500" 
                 Margin="-100,-100,-70,-160"
                 Opacity="1" 
-                Click="goDebitCredit"/>
-        <Button x:Name="refund" Content="" 
+                                     />
+        <Button x:ConnectionId='7' x:Name="refund" Content="" 
                 HorizontalAlignment="Center" VerticalAlignment="Center" 
                 Height="100" Width="500" 
                 Margin="-100,-100,-70,-460"
                 Opacity="1" 
-                Click="goAccount"/>
+                                 />
 
-        <TextBlock x:Name="feedback"
+        <TextBlock x:ConnectionId='8' x:Name="feedback"
                    Width="1600" Height="100"
                    Foreground="#58585B" FontFamily="Segoe UI Light" FontSize="40"
                    HorizontalAlignment="Left" VerticalAlignment="Top"
@@ -55,3 +55,4 @@
                    TextWrapping="Wrap" />
     </Grid>
 </Page>
+

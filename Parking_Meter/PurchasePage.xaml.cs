@@ -37,6 +37,19 @@ namespace Parking_Meter
             hoursBox.Text = "" + this.hours;
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            var par = (int[])e.Parameter;
+            this.min = par[0];
+            this.hours = par[1];
+
+            computePrice();
+            minutesBox.Text = "" + this.min;
+            hoursBox.Text = "" + this.hours;
+        }
+
         private void goBack(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MenuPage));
@@ -54,12 +67,15 @@ namespace Parking_Meter
 
         private void goChoosePayment(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ChoosePaymentPage))
+            int[] param = new int[2] { this.min, this.hours };
+            this.Frame.Navigate(typeof(ChoosePaymentPage), param);
         }
 
 
 
         public double getPrice() { return this.price; }
+        public int getHours() { return this.hours; }
+        public int getMinutes() { return this.min; }
 
 
 
