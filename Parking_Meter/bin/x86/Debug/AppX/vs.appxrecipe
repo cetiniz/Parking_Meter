@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-20T04:12:10.323</Modified>
+      <Modified>2017-11-20T21:58:51.498</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Parking_Meter.exe">
       <PackagePath>entrypoint\Parking_Meter.exe</PackagePath>
-      <Modified>2017-11-20T04:12:08.854</Modified>
+      <Modified>2017-11-20T21:58:50.848</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,21 +495,13 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T03:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\HomePage.png">
-      <PackagePath>Assets\HomePage.png</PackagePath>
-      <Modified>2017-11-20T00:05:41.971</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\MainMenu.png">
-      <PackagePath>Assets\MainMenu.png</PackagePath>
-      <Modified>2017-11-19T21:47:07.115</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\MenuPage-02-02-02.png">
-      <PackagePath>Assets\MenuPage-02-02-02.png</PackagePath>
-      <Modified>2017-11-20T03:39:00.643</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-11-18T03:09:54.083</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\PurchasePage.png">
+      <PackagePath>Assets\PurchasePage.png</PackagePath>
+      <Modified>2017-11-20T21:48:37.138</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -531,6 +523,14 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-11-18T03:09:54.083</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\StartPage.png">
+      <PackagePath>Assets\StartPage.png</PackagePath>
+      <Modified>2017-11-20T00:05:41.971</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\MenuPage.png">
+      <PackagePath>Assets\MenuPage.png</PackagePath>
+      <Modified>2017-11-20T20:55:16.133</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -547,7 +547,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Parking_Meter.xr.xml">
       <PackagePath>Parking_Meter.xr.xml</PackagePath>
-      <Modified>2017-11-20T04:09:54.623</Modified>
+      <Modified>2017-11-20T21:53:03.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -556,11 +556,11 @@
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-20T04:12:09.825</Modified>
+      <Modified>2017-11-20T21:58:51.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Core\Parking_Meter.exe">
       <PackagePath>Parking_Meter.exe</PackagePath>
-      <Modified>2017-11-20T04:12:10.317</Modified>
+      <Modified>2017-11-20T21:58:51.495</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
