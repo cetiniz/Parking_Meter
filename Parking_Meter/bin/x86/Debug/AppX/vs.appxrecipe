@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-20T04:12:10.323</Modified>
+      <Modified>2017-11-20T21:34:40.950</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Parking_Meter.exe">
       <PackagePath>entrypoint\Parking_Meter.exe</PackagePath>
-      <Modified>2017-11-20T04:12:08.854</Modified>
+      <Modified>2017-11-20T21:34:40.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,9 +495,101 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T03:15:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\ButtonSelect-19.png">
+      <PackagePath>Assets\ButtonSelect-19.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.476</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\ButtonSelect-20.png">
+      <PackagePath>Assets\ButtonSelect-20.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.483</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-01.png">
+      <PackagePath>Assets\Choose parking time-01.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.492</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-02.png">
+      <PackagePath>Assets\Choose parking time-02.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-03.png">
+      <PackagePath>Assets\Choose parking time-03.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.501</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-04.png">
+      <PackagePath>Assets\Choose parking time-04.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.509</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-05.png">
+      <PackagePath>Assets\Choose parking time-05.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.517</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-06.png">
+      <PackagePath>Assets\Choose parking time-06.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-07.png">
+      <PackagePath>Assets\Choose parking time-07.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.534</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-08.png">
+      <PackagePath>Assets\Choose parking time-08.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.543</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-09.png">
+      <PackagePath>Assets\Choose parking time-09.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.551</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-10.png">
+      <PackagePath>Assets\Choose parking time-10.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-11.png">
+      <PackagePath>Assets\Choose parking time-11.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-12.png">
+      <PackagePath>Assets\Choose parking time-12.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.581</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-13.png">
+      <PackagePath>Assets\Choose parking time-13.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.600</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-15.png">
+      <PackagePath>Assets\Choose parking time-15.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.612</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-16.png">
+      <PackagePath>Assets\Choose parking time-16.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.622</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-17.png">
+      <PackagePath>Assets\Choose parking time-17.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.632</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time-18.png">
+      <PackagePath>Assets\Choose parking time-18.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.639</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Choose parking time_Printing ticket.png">
+      <PackagePath>Assets\Choose parking time_Printing ticket.png</PackagePath>
+      <Modified>2017-11-20T04:29:55.647</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\HomePage.png">
       <PackagePath>Assets\HomePage.png</PackagePath>
       <Modified>2017-11-20T00:05:41.971</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\incr_decr_time_buttons-18.png">
+      <PackagePath>Assets\incr_decr_time_buttons-18.png</PackagePath>
+      <Modified>2017-11-20T04:34:33.144</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\incr_decr_time_buttons-19.png">
+      <PackagePath>Assets\incr_decr_time_buttons-19.png</PackagePath>
+      <Modified>2017-11-20T04:34:33.150</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2017-11-18T03:09:54.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\MainMenu.png">
       <PackagePath>Assets\MainMenu.png</PackagePath>
@@ -505,11 +597,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\MenuPage-02-02-02.png">
       <PackagePath>Assets\MenuPage-02-02-02.png</PackagePath>
-      <Modified>2017-11-20T03:39:00.643</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-11-18T03:09:54.083</Modified>
+      <Modified>2017-11-20T20:55:16.133</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -547,7 +635,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Parking_Meter.xr.xml">
       <PackagePath>Parking_Meter.xr.xml</PackagePath>
-      <Modified>2017-11-20T04:09:54.623</Modified>
+      <Modified>2017-11-20T21:32:47.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -556,11 +644,11 @@
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-20T04:12:09.825</Modified>
+      <Modified>2017-11-20T21:34:40.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Core\Parking_Meter.exe">
       <PackagePath>Parking_Meter.exe</PackagePath>
-      <Modified>2017-11-20T04:12:10.317</Modified>
+      <Modified>2017-11-20T21:34:40.948</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

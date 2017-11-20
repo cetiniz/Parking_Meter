@@ -132,17 +132,19 @@ namespace Parking_Meter.Parking_Meter_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "Parking_Meter.MainPage";
+            _typeNameTable = new string[5];
+            _typeNameTable[0] = "Parking_Meter.PurchasePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Parking_Meter.NavigatePage";
+            _typeNameTable[3] = "Parking_Meter.MenuPage";
+            _typeNameTable[4] = "Parking_Meter.StartPage";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::Parking_Meter.MainPage);
+            _typeTable = new global::System.Type[5];
+            _typeTable[0] = typeof(global::Parking_Meter.PurchasePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Parking_Meter.NavigatePage);
+            _typeTable[3] = typeof(global::Parking_Meter.MenuPage);
+            _typeTable[4] = typeof(global::Parking_Meter.StartPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -177,8 +179,9 @@ namespace Parking_Meter.Parking_Meter_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Parking_Meter.MainPage(); }
-        private object Activate_3_NavigatePage() { return new global::Parking_Meter.NavigatePage(); }
+        private object Activate_0_PurchasePage() { return new global::Parking_Meter.PurchasePage(); }
+        private object Activate_3_MenuPage() { return new global::Parking_Meter.MenuPage(); }
+        private object Activate_4_StartPage() { return new global::Parking_Meter.StartPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -190,9 +193,9 @@ namespace Parking_Meter.Parking_Meter_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Parking_Meter.MainPage
+            case 0:   //  Parking_Meter.PurchasePage
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_PurchasePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -205,9 +208,16 @@ namespace Parking_Meter.Parking_Meter_XamlTypeInfo
                 xamlType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Parking_Meter.NavigatePage
+            case 3:   //  Parking_Meter.MenuPage
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_NavigatePage;
+                userType.Activator = Activate_3_MenuPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Parking_Meter.StartPage
+                userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_StartPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
