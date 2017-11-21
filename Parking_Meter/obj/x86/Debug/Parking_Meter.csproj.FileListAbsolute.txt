@@ -246,3 +246,8 @@ C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\NoPage.xbf
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\YesPage.xbf
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\NoPage.xbf
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\YesPage.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\CityParkPay.g.i.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\CityParkPay.g.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\CityParkPay.xaml
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\CityParkPay.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\CityParkPay.xbf

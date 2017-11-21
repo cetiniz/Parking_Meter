@@ -24,6 +24,7 @@ namespace Parking_Meter
     public sealed partial class PayCashPage : Page
     {
         double paid, topay;
+        int hours, mins;
 
         public PayCashPage()
         {
@@ -37,8 +38,10 @@ namespace Parking_Meter
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-
-            this.topay = (double)e.Parameter;
+            var minsHours = (int[])e.Parameter;
+            this.topay = minsHours[0] * 60 * 0.05 + minsHours[1] * 0.05;
+            this.hours = minsHours[0];
+            this.mins = minsHours[1];
             topayBox.Text = "$ " + this.topay;
             paidBox.Text = "$ " + this.paid;
         }
@@ -57,6 +60,11 @@ namespace Parking_Meter
         private void goPaymentSuccess(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PaymentSuccessPage));
+        }
+        private void GoBackAction(object sender, RoutedEventArgs e)
+        {
+            int[] passArgs = { this.mins, this.hours };
+            this.Frame.Navigate(typeof(ChoosePaymentPage), passArgs);
         }
     }
 }

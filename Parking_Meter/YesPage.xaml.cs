@@ -41,7 +41,7 @@ namespace Parking_Meter
 
         private void enter0(object sender, RoutedEventArgs e)
         {
-            if (phoneNumber.Length < 13)
+            if (phoneNumber.Length < 12)
             {
                 if (phoneNumber.Length == 3 || phoneNumber.Length == 7)
                     this.phoneNumber += "-0";

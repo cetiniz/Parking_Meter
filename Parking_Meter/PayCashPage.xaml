@@ -16,7 +16,7 @@
         <Button x:Name="cancel" Content="" 
                 HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                 Height="80" Width="220" 
-                Margin="0,0,-230,0"
+                Margin="0,0,0,0"
                 Opacity="1" 
                 Click="goStart"/>
         <Button x:Name="help" Content="" 
@@ -26,22 +26,25 @@
                 Click="goHelp"/>
 
         <TextBlock x:Name="paidBox"
-                   Width="500" Height="80"
+                   Width="500" Height="100"
                    Foreground="White" FontFamily="Segoe UI Light" FontSize="60"
                    HorizontalAlignment="Left" VerticalAlignment="Top"
-                   Margin="140,165,0,0" TextWrapping="Wrap"/>
+                   Margin="380,239,0,0" TextWrapping="Wrap"/>
 
         <TextBlock x:Name="topayBox"
                    Width="500" Height="80"
                    Foreground="White" FontFamily="Segoe UI Light" FontSize="60"
                    HorizontalAlignment="Left" VerticalAlignment="Top"
-                   Margin="140,310,0,0" TextWrapping="Wrap" />
+                   Margin="368,365,0,0" TextWrapping="Wrap" />
 
         <Button x:Name="proceed" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
                 Height="90" Width="250" 
-                Margin="0,0,850,-280"
+                Margin="0,0,-900,0"
                 Opacity="1" 
                 Click="goPaymentSuccess"/>
+        <Button x:Name="GoBack" Content="" HorizontalAlignment="Left" 
+                Margin="5,630,0,0" 
+                VerticalAlignment="Top" Width="250" Height="90" Click="GoBackAction"/>
     </Grid>
 </Page>

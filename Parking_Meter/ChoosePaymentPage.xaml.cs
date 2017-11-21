@@ -62,8 +62,8 @@ namespace Parking_Meter
 
         private void goCash(object sender, RoutedEventArgs e)
         {
-            double price = this.min * 0.05 + this.hours * 60 * 0.05;
-            this.Frame.Navigate(typeof(PayCashPage), price);
+            int[] hourMins = { this.hours, this.min };
+            this.Frame.Navigate(typeof(PayCashPage), hourMins);
         }
 
         private void goDebitCredit(object sender, RoutedEventArgs e)
@@ -73,7 +73,8 @@ namespace Parking_Meter
 
         private void goAccount(object sender, RoutedEventArgs e)
         {
-            //this.Frame.Navigate(typeof(RefundPage));
+            int[] hourMins = { this.hours, this.min };
+            this.Frame.Navigate(typeof(CityParkPay), hourMins);
         }
     }
 }

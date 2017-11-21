@@ -98,6 +98,9 @@
     <Compile Include="ChoosePaymentPage.xaml.cs">
       <DependentUpon>ChoosePaymentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CityParkPay.xaml.cs">
+      <DependentUpon>CityParkPay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PayCashPage.xaml.cs">
       <DependentUpon>PayCashPage.xaml</DependentUpon>
     </Compile>
@@ -133,11 +136,12 @@
     <None Include="Parking_Meter_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\CityParkPay.png" />
     <Content Include="Assets\ChoosePaymentPage.png" />
+    <Content Include="Assets\PayCashPage.png" />
     <Content Include="Assets\YesPage.png" />
     <Content Include="Assets\NoPage.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\PayCashPage.png" />
     <Content Include="Assets\PaymentSuccessPage.png" />
     <Content Include="Assets\PurchasePage.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -158,6 +162,10 @@
     <Page Include="ChoosePaymentPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CityParkPay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PayCashPage.xaml">
       <Generator>MSBuild:Compile</Generator>
