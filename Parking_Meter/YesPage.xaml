@@ -26,63 +26,65 @@
 
         <Button x:Name="b0" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="90" Width="90" 
+                Height="80" Width="100" 
                 Margin="0,0,610,-330"
                 Opacity="1" 
                 Click="enter0"/>
         <Button x:Name="b1" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="90" Width="90" 
+                Height="80" Width="90" 
                 Margin="0,0,915,300"
                 Opacity="1" 
                 Click="enter1"/>
         <Button x:Name="b2" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,615,300"
                 Opacity="1" 
                 Click="enter2"/>
         <Button x:Name="b3" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,315,300"
                 Opacity="1" 
                 Click="enter3"/>
         <Button x:Name="b4" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,915,90"
                 Opacity="1" 
                 Click="enter4"/>
         <Button x:Name="b5" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,615,90"
                 Opacity="1" 
                 Click="enter5"/>
         <Button x:Name="b6" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,315,90"
                 Opacity="1" 
                 Click="enter6"/>
         <Button x:Name="b7" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,915,-120"
                 Opacity="1" 
                 Click="enter7"/>
         <Button x:Name="b8" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,615,-120"
                 Opacity="1" 
                 Click="enter8"/>
         <Button x:Name="b9" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,315,-120"
                 Opacity="1" 
                 Click="enter9"/>
+        <TextBlock x:Name="NumberBox" HorizontalAlignment="Left" Margin="650,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="107" Width="708" FontSize="72"/>
+        <Button x:Name="RemoveChar" HorizontalAlignment="Left" Margin="430,485,0,0" VerticalAlignment="Top" Width="102" Height="75" Click="RemoveCharFunc"/>
     </Grid>
 </Page>
