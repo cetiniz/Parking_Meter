@@ -2,6 +2,9 @@ WinMetadata\Windows.winmd
 Assets\ChoosePaymentPage.png
 Assets\LockScreenLogo.scale-200.png
 Assets\MenuPage.png
+Assets\NoPage.png
+Assets\PayCashPage.png
+Assets\PaymentSuccessPage.png
 Assets\PurchasePage.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -10,5 +13,6 @@ Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\StartPage.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
+Assets\YesPage.png
 Parking_Meter.xr.xml
 Properties\Default.rd.xml
