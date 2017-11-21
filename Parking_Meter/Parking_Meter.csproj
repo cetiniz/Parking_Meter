@@ -98,11 +98,23 @@
     <Compile Include="ChoosePaymentPage.xaml.cs">
       <DependentUpon>ChoosePaymentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PayCashPage.xaml.cs">
+      <DependentUpon>PayCashPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NoPage.xaml.cs">
+      <DependentUpon>NoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YesPage.xaml.cs">
+      <DependentUpon>YesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PurchasePage.xaml.cs">
       <DependentUpon>PurchasePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentSuccessPage.xaml.cs">
+      <DependentUpon>PaymentSuccessPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="StartPage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>
@@ -122,7 +134,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\ChoosePaymentPage.png" />
+    <Content Include="Assets\YesPage.png" />
+    <Content Include="Assets\NoPage.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\PayCashPage.png" />
+    <Content Include="Assets\PaymentSuccessPage.png" />
     <Content Include="Assets\PurchasePage.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
@@ -143,11 +159,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PayCashPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NoPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="YesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PurchasePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MenuPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PaymentSuccessPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

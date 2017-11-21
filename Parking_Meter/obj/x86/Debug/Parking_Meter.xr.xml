@@ -47,8 +47,12 @@
       <RootProperty Name="TextWrapping" />
     </RootType>
     <RootType FullName="Parking_Meter.ChoosePaymentPage" />
+    <RootType FullName="Parking_Meter.PayCashPage" />
+    <RootType FullName="Parking_Meter.NoPage" />
+    <RootType FullName="Parking_Meter.YesPage" />
     <RootType FullName="Parking_Meter.PurchasePage" />
     <RootType FullName="Parking_Meter.MenuPage" />
+    <RootType FullName="Parking_Meter.PaymentSuccessPage" />
     <RootType FullName="Parking_Meter.StartPage" />
   </Roots.RootTypes>
 </Roots>

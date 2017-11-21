@@ -1,0 +1,88 @@
+﻿<Page
+    x:Class="Parking_Meter.YesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Parking_Meter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="Auto" Height="Auto">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,0,0">
+
+        <Image x:Name="image" 
+               HorizontalAlignment="Left"
+               Source="/Assets/YesPage.png" 
+               RenderTransformOrigin="0,0" Margin="0,0,0,0" Height="auto" Width="auto" VerticalAlignment="Top"  />
+        <Button x:Name="back" Content="" 
+                HorizontalAlignment="Left"  VerticalAlignment="Bottom" 
+                Height="80" Width="250" 
+                Opacity="1" 
+                Click="goBack"/>
+        <Button x:Name="help" Content="" 
+                HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                Height="80" Width="200" 
+                Opacity="1" 
+                Click="goHelp"/>
+
+        <Button x:Name="b0" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="90" Width="90" 
+                Margin="0,0,610,-330"
+                Opacity="1" 
+                Click="enter0"/>
+        <Button x:Name="b1" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="90" Width="90" 
+                Margin="0,0,915,300"
+                Opacity="1" 
+                Click="enter1"/>
+        <Button x:Name="b2" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="110" Width="400" 
+                Margin="0,0,20,-200"
+                Opacity="1" 
+                Click="enter2"/>
+        <Button x:Name="b3" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="110" Width="400" 
+                Margin="0,0,20,-200"
+                Opacity="1" 
+                Click="enter3"/>
+        <Button x:Name="b4" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="110" Width="400" 
+                Margin="0,0,20,-200"
+                Opacity="1" 
+                Click="enter4"/>
+        <Button x:Name="b5" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="110" Width="400" 
+                Margin="0,0,20,-200"
+                Opacity="1" 
+                Click="enter5"/>
+        <Button x:Name="b6" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="110" Width="400" 
+                Margin="0,0,20,-200"
+                Opacity="1" 
+                Click="enter6"/>
+        <Button x:Name="b7" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="110" Width="400" 
+                Margin="0,0,20,-200"
+                Opacity="1" 
+                Click="enter7"/>
+        <Button x:Name="b8" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="110" Width="400" 
+                Margin="0,0,20,-200"
+                Opacity="1" 
+                Click="enter8"/>
+        <Button x:Name="b9" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="110" Width="400" 
+                Margin="0,0,20,-200"
+                Opacity="1" 
+                Click="enter9"/>
+    </Grid>
+</Page>
