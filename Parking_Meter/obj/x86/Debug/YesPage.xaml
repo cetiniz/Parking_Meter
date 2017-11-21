@@ -26,64 +26,66 @@
 
         <Button x:ConnectionId='4' x:Name="b0" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,610,-330"
                 Opacity="1" 
                               />
         <Button x:ConnectionId='5' x:Name="b1" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="90" 
+                Margin="0,0,915,300"
                 Opacity="1" 
                               />
         <Button x:ConnectionId='6' x:Name="b2" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,615,300"
                 Opacity="1" 
                               />
         <Button x:ConnectionId='7' x:Name="b3" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,315,300"
                 Opacity="1" 
                               />
         <Button x:ConnectionId='8' x:Name="b4" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,915,90"
                 Opacity="1" 
                               />
         <Button x:ConnectionId='9' x:Name="b5" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,615,90"
                 Opacity="1" 
                               />
         <Button x:ConnectionId='10' x:Name="b6" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,315,90"
                 Opacity="1" 
                               />
         <Button x:ConnectionId='11' x:Name="b7" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,915,-120"
                 Opacity="1" 
                               />
         <Button x:ConnectionId='12' x:Name="b8" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,615,-120"
                 Opacity="1" 
                               />
         <Button x:ConnectionId='13' x:Name="b9" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
-                Height="110" Width="400" 
-                Margin="0,0,20,-200"
+                Height="80" Width="100" 
+                Margin="0,0,315,-120"
                 Opacity="1" 
                               />
+        <TextBlock x:ConnectionId='14' x:Name="NumberBox" HorizontalAlignment="Left" Margin="650,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="107" Width="708" FontSize="72"/>
+        <Button x:ConnectionId='15' x:Name="RemoveChar" HorizontalAlignment="Left" Margin="430,485,0,0" VerticalAlignment="Top" Width="102" Height="75"                       />
     </Grid>
 </Page>
 
