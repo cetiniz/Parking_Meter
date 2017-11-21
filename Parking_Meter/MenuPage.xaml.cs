@@ -46,7 +46,8 @@ namespace Parking_Meter
 
         private void goPurchase(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PurchasePage));
+            int[] param = new int[2] { 30, 0 };
+            this.Frame.Navigate(typeof(PurchasePage), param);
         }
 
         private void goAdd(object sender, RoutedEventArgs e)

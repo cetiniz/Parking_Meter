@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace Parking_Meter
@@ -23,15 +24,30 @@ namespace Parking_Meter
     /// </summary>
     public sealed partial class ChoosePaymentPage : Page
     {
+        int min, hours;
+
         public ChoosePaymentPage()
         {
             this.InitializeComponent();
         }
 
-        
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            var par = (int[])e.Parameter;
+            this.min = par[0];
+            this.hours = par[1];
+
+            var price = this.min * 0.05 + this.hours * 60 * 0.05;
+            feedback.Text = "The cost of parking for " + hours + " hours, " + min + "min is $ " + price;
+        }
+
+
         private void goBack(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(StartPage));
+            int[] param = new int[2] { this.min, this.hours };
+            this.Frame.Navigate(typeof(PurchasePage), param);
         }
 
         private void goStart(object sender, RoutedEventArgs e)
@@ -44,17 +60,17 @@ namespace Parking_Meter
 
         }
 
-        private void goPurchase(object sender, RoutedEventArgs e)
+        private void goCash(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PurchasePage));
+            //this.Frame.Navigate(typeof(PurchasePage));
         }
 
-        private void goAdd(object sender, RoutedEventArgs e)
+        private void goDebitCredit(object sender, RoutedEventArgs e)
         {
             //this.Frame.Navigate(typeof(AddPage));
         }
 
-        private void goRefund(object sender, RoutedEventArgs e)
+        private void goAccount(object sender, RoutedEventArgs e)
         {
             //this.Frame.Navigate(typeof(RefundPage));
         }

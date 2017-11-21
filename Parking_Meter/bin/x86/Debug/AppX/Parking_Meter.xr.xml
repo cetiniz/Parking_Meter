@@ -46,6 +46,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
     </RootType>
+    <RootType FullName="Parking_Meter.ChoosePaymentPage" />
     <RootType FullName="Parking_Meter.PurchasePage" />
     <RootType FullName="Parking_Meter.MenuPage" />
     <RootType FullName="Parking_Meter.StartPage" />
