@@ -54,6 +54,8 @@
     <RootType FullName="Parking_Meter.ChoosePaymentPage" />
     <RootType FullName="Parking_Meter.CityParkPay" />
     <RootType FullName="Parking_Meter.DeductFromAccount" />
+    <RootType FullName="Parking_Meter.EnterPinforRefund" />
+    <RootType FullName="Parking_Meter.EnterPinOnTicket" />
     <RootType FullName="Parking_Meter.FinalAccountBalance" />
     <RootType FullName="Parking_Meter.FinalPageConfirmMobile" />
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">

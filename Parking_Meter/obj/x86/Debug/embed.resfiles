@@ -4,6 +4,8 @@ BlankPage1.xbf
 ChoosePaymentPage.xbf
 CityParkPay.xbf
 DeductFromAccount.xbf
+EnterPinforRefund.xbf
+EnterPinOnTicket.xbf
 FinalAccountBalance.xbf
 FinalPageConfirmMobile.xbf
 MenuPage.xbf

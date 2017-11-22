@@ -52,7 +52,7 @@ namespace Parking_Meter
 
         private void goAdd(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BlankPage1));
+            this.Frame.Navigate(typeof(EnterPinOnTicket));
         }
 
         private void goRefund(object sender, RoutedEventArgs e)

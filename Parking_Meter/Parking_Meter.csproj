@@ -110,6 +110,12 @@
     <Compile Include="DeductFromAccount.xaml.cs">
       <DependentUpon>DeductFromAccount.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EnterPinforRefund.xaml.cs">
+      <DependentUpon>EnterPinforRefund.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnterPinOnTicket.xaml.cs">
+      <DependentUpon>EnterPinOnTicket.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FinalAccountBalance.xaml.cs">
       <DependentUpon>FinalAccountBalance.xaml</DependentUpon>
     </Compile>
@@ -171,6 +177,7 @@
     <Content Include="Assets\DeductFromAccount.png" />
     <Content Include="Assets\CityParkPay.png" />
     <Content Include="Assets\ChoosePaymentPage.png" />
+    <Content Include="Assets\Enter_pin_on_ticket-26.png" />
     <Content Include="Assets\final_account_balance-06.png" />
     <Content Include="Assets\final_page_phone_confirm-20.png" />
     <Content Include="Assets\PayCashPage.png" />
@@ -214,6 +221,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DeductFromAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnterPinforRefund.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnterPinOnTicket.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
