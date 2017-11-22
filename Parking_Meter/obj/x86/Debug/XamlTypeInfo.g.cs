@@ -132,7 +132,7 @@ namespace Parking_Meter.Parking_Meter_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[20];
+            _typeNameTable = new string[21];
             _typeNameTable[0] = "Parking_Meter.AddTimetoTicket";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -140,21 +140,22 @@ namespace Parking_Meter.Parking_Meter_XamlTypeInfo
             _typeNameTable[4] = "Parking_Meter.ChoosePaymentPage";
             _typeNameTable[5] = "Parking_Meter.CityParkPay";
             _typeNameTable[6] = "Parking_Meter.DeductFromAccount";
-            _typeNameTable[7] = "Parking_Meter.FinalPageConfirmMobile";
-            _typeNameTable[8] = "Parking_Meter.PayCashPage";
-            _typeNameTable[9] = "Parking_Meter.NoPage";
-            _typeNameTable[10] = "Parking_Meter.PayWithCard";
-            _typeNameTable[11] = "Parking_Meter.Processing";
-            _typeNameTable[12] = "Parking_Meter.ProcessingRefund";
-            _typeNameTable[13] = "Parking_Meter.RefundBarcodeScanner";
-            _typeNameTable[14] = "Parking_Meter.RefundTicketChange";
-            _typeNameTable[15] = "Parking_Meter.YesPage";
-            _typeNameTable[16] = "Parking_Meter.PurchasePage";
-            _typeNameTable[17] = "Parking_Meter.MenuPage";
-            _typeNameTable[18] = "Parking_Meter.PaymentSuccessPage";
-            _typeNameTable[19] = "Parking_Meter.StartPage";
+            _typeNameTable[7] = "Parking_Meter.FinalAccountBalance";
+            _typeNameTable[8] = "Parking_Meter.FinalPageConfirmMobile";
+            _typeNameTable[9] = "Parking_Meter.PayCashPage";
+            _typeNameTable[10] = "Parking_Meter.NoPage";
+            _typeNameTable[11] = "Parking_Meter.PayWithCard";
+            _typeNameTable[12] = "Parking_Meter.Processing";
+            _typeNameTable[13] = "Parking_Meter.ProcessingRefund";
+            _typeNameTable[14] = "Parking_Meter.RefundBarcodeScanner";
+            _typeNameTable[15] = "Parking_Meter.RefundTicketChange";
+            _typeNameTable[16] = "Parking_Meter.YesPage";
+            _typeNameTable[17] = "Parking_Meter.PurchasePage";
+            _typeNameTable[18] = "Parking_Meter.MenuPage";
+            _typeNameTable[19] = "Parking_Meter.PaymentSuccessPage";
+            _typeNameTable[20] = "Parking_Meter.StartPage";
 
-            _typeTable = new global::System.Type[20];
+            _typeTable = new global::System.Type[21];
             _typeTable[0] = typeof(global::Parking_Meter.AddTimetoTicket);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -162,19 +163,20 @@ namespace Parking_Meter.Parking_Meter_XamlTypeInfo
             _typeTable[4] = typeof(global::Parking_Meter.ChoosePaymentPage);
             _typeTable[5] = typeof(global::Parking_Meter.CityParkPay);
             _typeTable[6] = typeof(global::Parking_Meter.DeductFromAccount);
-            _typeTable[7] = typeof(global::Parking_Meter.FinalPageConfirmMobile);
-            _typeTable[8] = typeof(global::Parking_Meter.PayCashPage);
-            _typeTable[9] = typeof(global::Parking_Meter.NoPage);
-            _typeTable[10] = typeof(global::Parking_Meter.PayWithCard);
-            _typeTable[11] = typeof(global::Parking_Meter.Processing);
-            _typeTable[12] = typeof(global::Parking_Meter.ProcessingRefund);
-            _typeTable[13] = typeof(global::Parking_Meter.RefundBarcodeScanner);
-            _typeTable[14] = typeof(global::Parking_Meter.RefundTicketChange);
-            _typeTable[15] = typeof(global::Parking_Meter.YesPage);
-            _typeTable[16] = typeof(global::Parking_Meter.PurchasePage);
-            _typeTable[17] = typeof(global::Parking_Meter.MenuPage);
-            _typeTable[18] = typeof(global::Parking_Meter.PaymentSuccessPage);
-            _typeTable[19] = typeof(global::Parking_Meter.StartPage);
+            _typeTable[7] = typeof(global::Parking_Meter.FinalAccountBalance);
+            _typeTable[8] = typeof(global::Parking_Meter.FinalPageConfirmMobile);
+            _typeTable[9] = typeof(global::Parking_Meter.PayCashPage);
+            _typeTable[10] = typeof(global::Parking_Meter.NoPage);
+            _typeTable[11] = typeof(global::Parking_Meter.PayWithCard);
+            _typeTable[12] = typeof(global::Parking_Meter.Processing);
+            _typeTable[13] = typeof(global::Parking_Meter.ProcessingRefund);
+            _typeTable[14] = typeof(global::Parking_Meter.RefundBarcodeScanner);
+            _typeTable[15] = typeof(global::Parking_Meter.RefundTicketChange);
+            _typeTable[16] = typeof(global::Parking_Meter.YesPage);
+            _typeTable[17] = typeof(global::Parking_Meter.PurchasePage);
+            _typeTable[18] = typeof(global::Parking_Meter.MenuPage);
+            _typeTable[19] = typeof(global::Parking_Meter.PaymentSuccessPage);
+            _typeTable[20] = typeof(global::Parking_Meter.StartPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -214,19 +216,20 @@ namespace Parking_Meter.Parking_Meter_XamlTypeInfo
         private object Activate_4_ChoosePaymentPage() { return new global::Parking_Meter.ChoosePaymentPage(); }
         private object Activate_5_CityParkPay() { return new global::Parking_Meter.CityParkPay(); }
         private object Activate_6_DeductFromAccount() { return new global::Parking_Meter.DeductFromAccount(); }
-        private object Activate_7_FinalPageConfirmMobile() { return new global::Parking_Meter.FinalPageConfirmMobile(); }
-        private object Activate_8_PayCashPage() { return new global::Parking_Meter.PayCashPage(); }
-        private object Activate_9_NoPage() { return new global::Parking_Meter.NoPage(); }
-        private object Activate_10_PayWithCard() { return new global::Parking_Meter.PayWithCard(); }
-        private object Activate_11_Processing() { return new global::Parking_Meter.Processing(); }
-        private object Activate_12_ProcessingRefund() { return new global::Parking_Meter.ProcessingRefund(); }
-        private object Activate_13_RefundBarcodeScanner() { return new global::Parking_Meter.RefundBarcodeScanner(); }
-        private object Activate_14_RefundTicketChange() { return new global::Parking_Meter.RefundTicketChange(); }
-        private object Activate_15_YesPage() { return new global::Parking_Meter.YesPage(); }
-        private object Activate_16_PurchasePage() { return new global::Parking_Meter.PurchasePage(); }
-        private object Activate_17_MenuPage() { return new global::Parking_Meter.MenuPage(); }
-        private object Activate_18_PaymentSuccessPage() { return new global::Parking_Meter.PaymentSuccessPage(); }
-        private object Activate_19_StartPage() { return new global::Parking_Meter.StartPage(); }
+        private object Activate_7_FinalAccountBalance() { return new global::Parking_Meter.FinalAccountBalance(); }
+        private object Activate_8_FinalPageConfirmMobile() { return new global::Parking_Meter.FinalPageConfirmMobile(); }
+        private object Activate_9_PayCashPage() { return new global::Parking_Meter.PayCashPage(); }
+        private object Activate_10_NoPage() { return new global::Parking_Meter.NoPage(); }
+        private object Activate_11_PayWithCard() { return new global::Parking_Meter.PayWithCard(); }
+        private object Activate_12_Processing() { return new global::Parking_Meter.Processing(); }
+        private object Activate_13_ProcessingRefund() { return new global::Parking_Meter.ProcessingRefund(); }
+        private object Activate_14_RefundBarcodeScanner() { return new global::Parking_Meter.RefundBarcodeScanner(); }
+        private object Activate_15_RefundTicketChange() { return new global::Parking_Meter.RefundTicketChange(); }
+        private object Activate_16_YesPage() { return new global::Parking_Meter.YesPage(); }
+        private object Activate_17_PurchasePage() { return new global::Parking_Meter.PurchasePage(); }
+        private object Activate_18_MenuPage() { return new global::Parking_Meter.MenuPage(); }
+        private object Activate_19_PaymentSuccessPage() { return new global::Parking_Meter.PaymentSuccessPage(); }
+        private object Activate_20_StartPage() { return new global::Parking_Meter.StartPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -281,93 +284,100 @@ namespace Parking_Meter.Parking_Meter_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 7:   //  Parking_Meter.FinalPageConfirmMobile
+            case 7:   //  Parking_Meter.FinalAccountBalance
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_FinalPageConfirmMobile;
+                userType.Activator = Activate_7_FinalAccountBalance;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Parking_Meter.PayCashPage
+            case 8:   //  Parking_Meter.FinalPageConfirmMobile
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_PayCashPage;
+                userType.Activator = Activate_8_FinalPageConfirmMobile;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Parking_Meter.NoPage
+            case 9:   //  Parking_Meter.PayCashPage
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_NoPage;
+                userType.Activator = Activate_9_PayCashPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Parking_Meter.PayWithCard
+            case 10:   //  Parking_Meter.NoPage
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_PayWithCard;
+                userType.Activator = Activate_10_NoPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Parking_Meter.Processing
+            case 11:   //  Parking_Meter.PayWithCard
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_Processing;
+                userType.Activator = Activate_11_PayWithCard;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Parking_Meter.ProcessingRefund
+            case 12:   //  Parking_Meter.Processing
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_ProcessingRefund;
+                userType.Activator = Activate_12_Processing;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  Parking_Meter.RefundBarcodeScanner
+            case 13:   //  Parking_Meter.ProcessingRefund
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_RefundBarcodeScanner;
+                userType.Activator = Activate_13_ProcessingRefund;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Parking_Meter.RefundTicketChange
+            case 14:   //  Parking_Meter.RefundBarcodeScanner
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_RefundTicketChange;
+                userType.Activator = Activate_14_RefundBarcodeScanner;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Parking_Meter.YesPage
+            case 15:   //  Parking_Meter.RefundTicketChange
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_YesPage;
+                userType.Activator = Activate_15_RefundTicketChange;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Parking_Meter.PurchasePage
+            case 16:   //  Parking_Meter.YesPage
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_PurchasePage;
+                userType.Activator = Activate_16_YesPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  Parking_Meter.MenuPage
+            case 17:   //  Parking_Meter.PurchasePage
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_MenuPage;
+                userType.Activator = Activate_17_PurchasePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Parking_Meter.PaymentSuccessPage
+            case 18:   //  Parking_Meter.MenuPage
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_PaymentSuccessPage;
+                userType.Activator = Activate_18_MenuPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Parking_Meter.StartPage
+            case 19:   //  Parking_Meter.PaymentSuccessPage
                 userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_StartPage;
+                userType.Activator = Activate_19_PaymentSuccessPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  Parking_Meter.StartPage
+                userType = new global::Parking_Meter.Parking_Meter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_20_StartPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

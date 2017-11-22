@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Parking_Meter.FinalAccountBalance"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Parking_Meter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="image" 
+               HorizontalAlignment="Left" VerticalAlignment="Top"
+               Height="auto"  Width="auto" 
+               Source="Assets/final_account_balance-06.png"/>
+        <TextBlock x:Name="AccountBalance" 
+                   HorizontalAlignment="Left" 
+                   Margin="950,170,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="" 
+                   VerticalAlignment="Top" 
+                   Height="107" Width="708" 
+                   FontSize="60"
+                   Foreground="White"/>
+
+    </Grid>
+</Page>

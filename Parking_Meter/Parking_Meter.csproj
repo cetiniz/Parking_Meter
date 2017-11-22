@@ -110,6 +110,9 @@
     <Compile Include="DeductFromAccount.xaml.cs">
       <DependentUpon>DeductFromAccount.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FinalAccountBalance.xaml.cs">
+      <DependentUpon>FinalAccountBalance.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FinalPageConfirmMobile.xaml.cs">
       <DependentUpon>FinalPageConfirmMobile.xaml</DependentUpon>
     </Compile>
@@ -168,6 +171,7 @@
     <Content Include="Assets\DeductFromAccount.png" />
     <Content Include="Assets\CityParkPay.png" />
     <Content Include="Assets\ChoosePaymentPage.png" />
+    <Content Include="Assets\final_account_balance-06.png" />
     <Content Include="Assets\final_page_phone_confirm-20.png" />
     <Content Include="Assets\PayCashPage.png" />
     <Content Include="Assets\pay_with_card-22.png" />
@@ -210,6 +214,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DeductFromAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinalAccountBalance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

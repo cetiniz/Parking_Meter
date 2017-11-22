@@ -22,13 +22,14 @@ namespace Parking_Meter
     /// </summary>
     public sealed partial class DeductFromAccount : Page
     {
-        double topay;
+        double topay, balanceRemaining;
         int hours, mins;
 
         public DeductFromAccount()
         {
             this.InitializeComponent();
             this.topay = 0.0;
+            this.balanceRemaining = 0.0;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -40,15 +41,17 @@ namespace Parking_Meter
             this.mins = minsHours[1];
             amountToBeDeducted.Text = "$ " + this.topay;
             accountBalance.Text = "$ " + (this.topay + 4.56);
+            this.balanceRemaining = 4.56;
         }
 
         private void confirmAccountDeduction(object sender, RoutedEventArgs e)
         {
-            //this.Frame.Navigate(typeof(DeductFromAccount));
+            double balanceRemaining = this.balanceRemaining;
+            this.Frame.Navigate(typeof(FinalAccountBalance), balanceRemaining);
         }
         private void goBack(object sender, RoutedEventArgs e)
         {
-            int[] passArgs = { this.mins, this.hours };
+            int[] passArgs = { this.mins, this.hours, };
             this.Frame.Navigate(typeof(CityParkPay), passArgs);
         }
 
