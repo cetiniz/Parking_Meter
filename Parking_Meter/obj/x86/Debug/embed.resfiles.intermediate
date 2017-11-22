@@ -1,10 +1,17 @@
+AddTimetoTicket.xbf
 App.xbf
+BlankPage1.xbf
 ChoosePaymentPage.xbf
 CityParkPay.xbf
+DeductFromAccount.xbf
 MenuPage.xbf
 NoPage.xbf
 PayCashPage.xbf
 PaymentSuccessPage.xbf
+Processing.xbf
+ProcessingRefund.xbf
 PurchasePage.xbf
+RefundBarcodeScanner.xbf
+RefundTicketChange.xbf
 StartPage.xbf
 YesPage.xbf

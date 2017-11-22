@@ -6,6 +6,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
     </RootType>
@@ -21,8 +22,9 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Source" />
-      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
@@ -47,10 +49,27 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
     </RootType>
+    <RootType FullName="Parking_Meter.AddTimetoTicket" />
+    <RootType FullName="Parking_Meter.BlankPage1" />
     <RootType FullName="Parking_Meter.ChoosePaymentPage" />
     <RootType FullName="Parking_Meter.CityParkPay" />
+    <RootType FullName="Parking_Meter.DeductFromAccount" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
+      <RootMethod Name="GetAttachedFlyout" />
+      <RootMethod Name="SetAttachedFlyout" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+    </RootType>
     <RootType FullName="Parking_Meter.PayCashPage" />
     <RootType FullName="Parking_Meter.NoPage" />
+    <RootType FullName="Parking_Meter.Processing" />
+    <RootType FullName="Parking_Meter.ProcessingRefund" />
+    <RootType FullName="Parking_Meter.RefundBarcodeScanner" />
+    <RootType FullName="Parking_Meter.RefundTicketChange" />
     <RootType FullName="Parking_Meter.YesPage" />
     <RootType FullName="Parking_Meter.PurchasePage" />
     <RootType FullName="Parking_Meter.MenuPage" />

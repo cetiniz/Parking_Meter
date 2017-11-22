@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-21T06:53:22.315</Modified>
+      <Modified>2017-11-22T05:57:24.729</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Parking_Meter.exe">
       <PackagePath>entrypoint\Parking_Meter.exe</PackagePath>
-      <Modified>2017-11-21T06:53:21.683</Modified>
+      <Modified>2017-11-22T05:57:24.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,6 +495,18 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T03:15:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\add_time_to_ticket-23.png">
+      <PackagePath>Assets\add_time_to_ticket-23.png</PackagePath>
+      <Modified>2017-11-21T16:30:05.271</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\BarcodeUnderScanner.png">
+      <PackagePath>Assets\BarcodeUnderScanner.png</PackagePath>
+      <Modified>2017-11-21T07:51:16.450</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\DeductFromAccount.png">
+      <PackagePath>Assets\DeductFromAccount.png</PackagePath>
+      <Modified>2017-11-21T06:56:50.937</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\CityParkPay.png">
       <PackagePath>Assets\CityParkPay.png</PackagePath>
       <Modified>2017-11-21T05:52:44.380</Modified>
@@ -506,6 +518,14 @@
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\PayCashPage.png">
       <PackagePath>Assets\PayCashPage.png</PackagePath>
       <Modified>2017-11-21T05:24:15.270</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Processing-10.png">
+      <PackagePath>Assets\Processing-10.png</PackagePath>
+      <Modified>2017-11-21T15:59:58.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\refund_ticket-12.png">
+      <PackagePath>Assets\refund_ticket-12.png</PackagePath>
+      <Modified>2017-11-21T16:57:41.911</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\YesPage.png">
       <PackagePath>Assets\YesPage.png</PackagePath>
@@ -571,7 +591,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Parking_Meter.xr.xml">
       <PackagePath>Parking_Meter.xr.xml</PackagePath>
-      <Modified>2017-11-21T06:02:47.651</Modified>
+      <Modified>2017-11-22T03:21:17.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -580,11 +600,11 @@
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-21T06:53:22.138</Modified>
+      <Modified>2017-11-22T05:47:20.945</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\Core\Parking_Meter.exe">
       <PackagePath>Parking_Meter.exe</PackagePath>
-      <Modified>2017-11-21T06:53:22.312</Modified>
+      <Modified>2017-11-22T05:57:24.727</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

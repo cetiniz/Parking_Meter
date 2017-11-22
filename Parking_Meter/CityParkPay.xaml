@@ -103,7 +103,7 @@
                 Height="75" Width="265" 
                 Margin="-1400,90,-900,-350"
                 Opacity="1" 
-                Click="confirmAccountDeduction"/>
+                Click="goToConfirm"/>
         <Button x:Name="b4" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
                 Height="60" Width="75" 

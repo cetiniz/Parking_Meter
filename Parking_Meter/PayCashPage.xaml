@@ -6,13 +6,16 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
 
+    </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image x:Name="image" 
                HorizontalAlignment="Left" VerticalAlignment="Top"
                Height="auto"  Width="auto" 
-               Source="Assets/PayCashPage.png"/>
-        
+               Source="Assets/PayCashPage.png">
+        </Image>
+
         <Button x:Name="cancel" Content="" 
                 HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                 Height="80" Width="220" 
@@ -46,5 +49,37 @@
         <Button x:Name="GoBack" Content="" HorizontalAlignment="Left" 
                 Margin="5,630,0,0" 
                 VerticalAlignment="Top" Width="250" Height="90" Click="GoBackAction"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="240,300,-800,0" VerticalAlignment="Top" Width="160"
+               Source="Assets/StoreLogo.png"
+               Tapped="Image_Tapped">
+            <FlyoutBase.AttachedFlyout>
+                <Flyout>
+                    <StackPanel>
+                        <Button x:Name="Nickel" Content="5₵ " Click="NickelP"/>
+                        <Button x:Name="Dime" Content="10₵" Click="DimeP"/>
+                        <Button x:Name="Quarter" Content="25₵" Click="QuarterP"/>
+                        <Button x:Name="Loonie" Content="$1" Click="LoonieP"/>
+                        <Button x:Name="Toonie" Content="$2" Click="ToonieP"/>
+                    </StackPanel>
+                </Flyout>
+            </FlyoutBase.AttachedFlyout>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="55" Margin="200,350,-800,0" VerticalAlignment="Top" Width="160"
+               Source="Assets/StoreLogo.png"
+               Tapped="Tap_to_insert_bills">
+                <FlyoutBase.AttachedFlyout>
+                    <Flyout>
+                        <StackPanel>
+                            <Button x:Name="bill5" Content="$5" Click="Bill5"/>
+                            <Button x:Name="bill10" Content="$10" Click="Bill10"/>
+                            <Button x:Name="bill20" Content="$20" Click="Bill20"/>
+                            <Button x:Name="bill50" Content="$50" Click="Bill50"/>
+                            <Button x:Name="bill100" Content="$100" Click="Bill100"/>
+                        </StackPanel>
+                    </Flyout>
+                </FlyoutBase.AttachedFlyout>
+            </Image>
+
+
     </Grid>
 </Page>

@@ -370,6 +370,15 @@
     <AppxPackagedFile Include="C:\Users\Zach\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\add_time_to_ticket-23.png">
+      <PackagePath>Assets\add_time_to_ticket-23.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\BarcodeUnderScanner.png">
+      <PackagePath>Assets\BarcodeUnderScanner.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\DeductFromAccount.png">
+      <PackagePath>Assets\DeductFromAccount.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\CityParkPay.png">
       <PackagePath>Assets\CityParkPay.png</PackagePath>
     </AppxPackagedFile>
@@ -378,6 +387,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\PayCashPage.png">
       <PackagePath>Assets\PayCashPage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Processing-10.png">
+      <PackagePath>Assets\Processing-10.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\refund_ticket-12.png">
+      <PackagePath>Assets\refund_ticket-12.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\YesPage.png">
       <PackagePath>Assets\YesPage.png</PackagePath>

@@ -177,9 +177,10 @@ namespace Parking_Meter
             NumberBox.Text = accountCode;
         }
 
-        private void confirmAccountDeduction(object sender, RoutedEventArgs e)
+        private void goToConfirm(object sender, RoutedEventArgs e)
         {
-            //this.Frame.Navigate(typeof(PaymentSuccessPage));
+            int[] param = new int[2] { this.mins, this.hours };
+            this.Frame.Navigate(typeof(DeductFromAccount), param);
         }
 
         private void goBack(object sender, RoutedEventArgs e)
@@ -190,7 +191,6 @@ namespace Parking_Meter
 
         private void goStart(object sender, RoutedEventArgs e)
         {
-            int[] passArgs = { this.mins, this.hours };
             this.Frame.Navigate(typeof(StartPage));
         }
 

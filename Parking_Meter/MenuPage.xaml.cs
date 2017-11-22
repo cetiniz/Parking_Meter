@@ -52,12 +52,12 @@ namespace Parking_Meter
 
         private void goAdd(object sender, RoutedEventArgs e)
         {
-            //this.Frame.Navigate(typeof(AddPage));
+            this.Frame.Navigate(typeof(BlankPage1));
         }
 
         private void goRefund(object sender, RoutedEventArgs e)
         {
-            //this.Frame.Navigate(typeof(RefundPage));
+            this.Frame.Navigate(typeof(RefundBarcodeScanner));
         }
     }
 }

@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="Parking_Meter.DeductFromAccount"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Parking_Meter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="image" 
+               HorizontalAlignment="Left" VerticalAlignment="Top"
+               Height="auto"  Width="auto" 
+               Source="Assets/DeductFromAccount.png"/>
+        <Button x:Name="back" Content="" 
+                HorizontalAlignment="Left"  VerticalAlignment="Bottom" 
+                Height="80" Width="250" 
+                Opacity="1" 
+                Click="goBack"/>
+        <Button x:Name="cancel" Content="" 
+                HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                Height="80" Width="220" 
+                Opacity="1" 
+                Click="goStart"/>
+        <Button x:Name="help" Content="" 
+                HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                Height="80" Width="200" 
+                Opacity="1" 
+                Click="goHelp"/>
+        
+        <Button x:Name="proceed" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="105" Width="455" 
+                Margin="-900,100,-900,-200"
+                Opacity="1" 
+                Click="confirmAccountDeduction"/>
+
+        <TextBlock x:Name="amountToBeDeducted" 
+                   HorizontalAlignment="Left" 
+                   Margin="950,285,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="yo" 
+                   VerticalAlignment="Top" 
+                   Height="107" 
+                   Width="708" 
+                   FontSize="55"/>
+
+        <TextBlock x:Name="accountBalance" 
+                   HorizontalAlignment="Left" 
+                   Margin="950,130,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="yo" 
+                   VerticalAlignment="Top" 
+                   Height="107" 
+                   Width="708" 
+                   FontSize="55"/>
+
+
+    </Grid>
+</Page>
