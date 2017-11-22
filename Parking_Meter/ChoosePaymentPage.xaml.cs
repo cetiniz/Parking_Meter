@@ -68,7 +68,8 @@ namespace Parking_Meter
 
         private void goDebitCredit(object sender, RoutedEventArgs e)
         {
-            //this.Frame.Navigate(typeof(AddPage));
+            int[] passArgs = { this.min, this.hours };
+            this.Frame.Navigate(typeof(PayWithCard), passArgs);
         }
 
         private void goAccount(object sender, RoutedEventArgs e)

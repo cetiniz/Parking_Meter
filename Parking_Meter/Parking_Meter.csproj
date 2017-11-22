@@ -119,6 +119,9 @@
     <Compile Include="NoPage.xaml.cs">
       <DependentUpon>NoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PayWithCard.xaml.cs">
+      <DependentUpon>PayWithCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Processing.xaml.cs">
       <DependentUpon>Processing.xaml</DependentUpon>
     </Compile>
@@ -167,6 +170,7 @@
     <Content Include="Assets\ChoosePaymentPage.png" />
     <Content Include="Assets\final_page_phone_confirm-20.png" />
     <Content Include="Assets\PayCashPage.png" />
+    <Content Include="Assets\pay_with_card-22.png" />
     <Content Include="Assets\Processing-10.png" />
     <Content Include="Assets\refund_ticket-12.png" />
     <Content Include="Assets\YesPage.png" />
@@ -220,6 +224,10 @@
     <Page Include="NoPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PayWithCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Processing.xaml">
       <SubType>Designer</SubType>

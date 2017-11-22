@@ -54,6 +54,7 @@
     <RootType FullName="Parking_Meter.ChoosePaymentPage" />
     <RootType FullName="Parking_Meter.CityParkPay" />
     <RootType FullName="Parking_Meter.DeductFromAccount" />
+    <RootType FullName="Parking_Meter.FinalPageConfirmMobile" />
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
       <RootMethod Name="GetAttachedFlyout" />
       <RootMethod Name="SetAttachedFlyout" />
@@ -66,6 +67,7 @@
     </RootType>
     <RootType FullName="Parking_Meter.PayCashPage" />
     <RootType FullName="Parking_Meter.NoPage" />
+    <RootType FullName="Parking_Meter.PayWithCard" />
     <RootType FullName="Parking_Meter.Processing" />
     <RootType FullName="Parking_Meter.ProcessingRefund" />
     <RootType FullName="Parking_Meter.RefundBarcodeScanner" />

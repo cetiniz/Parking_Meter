@@ -286,3 +286,13 @@ C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\RefundTicke
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\ProcessingRefund.xbf
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\RefundBarcodeScanner.xbf
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\RefundTicketChange.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\FinalPageConfirmMobile.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FinalPageConfirmMobile.g.i.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FinalPageConfirmMobile.g.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FinalPageConfirmMobile.xaml
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FinalPageConfirmMobile.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\PayWithCard.g.i.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\PayWithCard.g.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\PayWithCard.xaml
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\PayWithCard.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\PayWithCard.xbf

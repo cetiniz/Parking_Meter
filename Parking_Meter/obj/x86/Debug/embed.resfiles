@@ -4,10 +4,12 @@ BlankPage1.xbf
 ChoosePaymentPage.xbf
 CityParkPay.xbf
 DeductFromAccount.xbf
+FinalPageConfirmMobile.xbf
 MenuPage.xbf
 NoPage.xbf
 PayCashPage.xbf
 PaymentSuccessPage.xbf
+PayWithCard.xbf
 Processing.xbf
 ProcessingRefund.xbf
 PurchasePage.xbf

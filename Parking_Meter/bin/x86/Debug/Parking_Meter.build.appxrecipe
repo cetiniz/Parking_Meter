@@ -385,8 +385,14 @@
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\ChoosePaymentPage.png">
       <PackagePath>Assets\ChoosePaymentPage.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\final_page_phone_confirm-20.png">
+      <PackagePath>Assets\final_page_phone_confirm-20.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\PayCashPage.png">
       <PackagePath>Assets\PayCashPage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\pay_with_card-22.png">
+      <PackagePath>Assets\pay_with_card-22.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Processing-10.png">
       <PackagePath>Assets\Processing-10.png</PackagePath>
