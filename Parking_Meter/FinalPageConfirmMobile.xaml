@@ -13,5 +13,7 @@
                Height="auto"  Width="auto" 
                Source="Assets/final_page_phone_confirm-20.png">
         </Image>
+
+        <TextBlock x:Name="NumberBox" HorizontalAlignment="Left" Margin="650,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="107" Width="708" FontSize="72"/>
     </Grid>
 </Page>

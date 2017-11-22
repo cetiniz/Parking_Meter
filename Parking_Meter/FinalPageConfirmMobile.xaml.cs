@@ -22,9 +22,17 @@ namespace Parking_Meter
     /// </summary>
     public sealed partial class FinalPageConfirmMobile : Page
     {
+        String phoneNumber;
+
         public FinalPageConfirmMobile()
         {
             this.InitializeComponent();
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            phoneNumber = (String)e.Parameter;
+            NumberBox.Text = phoneNumber;
         }
     }
 }

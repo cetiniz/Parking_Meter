@@ -34,6 +34,7 @@ namespace Parking_Meter
         }
 
         private global::Windows.UI.Xaml.Controls.Image image;
+        private global::Windows.UI.Xaml.Controls.TextBlock NumberBox;
     }
 }
 

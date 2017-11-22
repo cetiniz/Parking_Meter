@@ -38,6 +38,11 @@ namespace Parking_Meter
         {
 
         }
+        private void goFinal(object sender, RoutedEventArgs e)
+        {
+            String phoneNumber = this.phoneNumber;
+            this.Frame.Navigate(typeof(ChoosePaymentPage), phoneNumber);
+        }
 
         private void enter0(object sender, RoutedEventArgs e)
         {

@@ -23,6 +23,12 @@
                 Height="80" Width="200" 
                 Opacity="1" 
                 Click="goHelp"/>
+        <Button x:Name="proceed" Content="" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Height="90" Width="250" 
+                Margin="0,0,-900,0"
+                Opacity="1" 
+                Click="goFinal"/>
 
         <Button x:Name="b0" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
