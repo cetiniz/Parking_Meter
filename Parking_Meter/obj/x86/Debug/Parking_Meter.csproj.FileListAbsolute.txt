@@ -301,3 +301,13 @@ C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FinalAccoun
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FinalAccountBalance.g.cs
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FinalAccountBalance.xaml
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FinalAccountBalance.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\EnterPinOnTicket.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinOnTicket.g.i.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinOnTicket.g.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinOnTicket.xaml
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinOnTicket.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\EnterPinforRefund.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinforRefund.g.i.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinforRefund.g.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinforRefund.xaml
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinforRefund.xbf
