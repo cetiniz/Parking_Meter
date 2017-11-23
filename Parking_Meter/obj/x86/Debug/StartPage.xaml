@@ -21,6 +21,8 @@
         <Button x:ConnectionId='3' x:Name="lang"
                 HorizontalAlignment="Right" VerticalAlignment="Bottom"
                 Height="85" Width="245"/>
+        <TextBlock x:ConnectionId='4' x:Name="test" HorizontalAlignment="Left" Margin="100,50,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
     </Grid>
 </Page>
 

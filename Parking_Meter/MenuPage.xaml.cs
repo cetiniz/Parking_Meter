@@ -31,6 +31,7 @@ namespace Parking_Meter
         
         private void goBack(object sender, RoutedEventArgs e)
         {
+            
             this.Frame.Navigate(typeof(StartPage));
         }
 
@@ -57,7 +58,7 @@ namespace Parking_Meter
 
         private void goRefund(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(RefundBarcodeScanner));
+            this.Frame.Navigate(typeof(EnterPinforRefund));
         }
     }
 }

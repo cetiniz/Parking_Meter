@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,12 +26,16 @@ namespace Parking_Meter
         double topay;
         int hours, mins;
         String accountNumber;
+        String PIN;
+        bool correctPin;
 
         public PayWithCard()
         {
             this.InitializeComponent();
             this.topay = 0.0;
             this.accountNumber = "";
+            this.PIN = "";
+            this.correctPin = false;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -40,12 +45,16 @@ namespace Parking_Meter
             this.topay = minsHours[0] * 60 * 0.05 + minsHours[1] * 0.05;
             this.hours = minsHours[0];
             this.mins = minsHours[1];
+
+            AmounttoPay.Text = "$" + this.topay;
         }
 
         private void goBack(object sender, RoutedEventArgs e)
         {
-            int[] passArgs = { this.mins, this.hours };
-            this.Frame.Navigate(typeof(ChoosePaymentPage), passArgs);
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.GoBack();
+            //int[] passArgs = { this.mins, this.hours };
+            //this.Frame.Navigate(typeof(ChoosePaymentPage), passArgs);
         }
         private void Image_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -66,7 +75,25 @@ namespace Parking_Meter
 
         private void goFinal(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PaymentSuccessPage));
+
+            if (this.accountNumber.Length == 19)
+            {
+                FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+            }
+            else
+            {
+                DisplayErrorCredit(sender,e);
+            }
+        }
+        private async void DisplayErrorCredit(object sender, RoutedEventArgs e)
+        {
+            ContentDialog NumberError = new ContentDialog
+            {
+                Title = "Account Number Incorrect or too Short!",
+                Content = "Please retype account number",
+                CloseButtonText = "Ok"
+            };
+            ContentDialogResult accountNumber = await NumberError.ShowAsync();
         }
 
         private void DialogPrompt(object sender, RoutedEventArgs e)
@@ -132,9 +159,9 @@ namespace Parking_Meter
 
         private void enter0(object sender, RoutedEventArgs e)
         {
-            if (accountNumber.Length < 12)
+            if (accountNumber.Length < 19)
             {
-                if (accountNumber.Length == 3 || accountNumber.Length == 7)
+                if (accountNumber.Length == 4 || accountNumber.Length == 9 || accountNumber.Length == 14)
                     this.accountNumber += "-0";
                 else
                     this.accountNumber += "0";
@@ -144,9 +171,9 @@ namespace Parking_Meter
         }
         private void enter1(object sender, RoutedEventArgs e)
         {
-            if (accountNumber.Length < 12)
+            if (accountNumber.Length < 19)
             {
-                if (accountNumber.Length == 3 || accountNumber.Length == 7)
+                if (accountNumber.Length == 4 || accountNumber.Length == 9 || accountNumber.Length == 14)
                     this.accountNumber += "-1";
                 else
                     this.accountNumber += "1";
@@ -155,9 +182,9 @@ namespace Parking_Meter
         }
         private void enter2(object sender, RoutedEventArgs e)
         {
-            if (accountNumber.Length < 12)
+            if (accountNumber.Length < 19)
             {
-                if (accountNumber.Length == 3 || accountNumber.Length == 7)
+                if (accountNumber.Length == 4 || accountNumber.Length == 9 || accountNumber.Length == 14)
                     this.accountNumber += "-2";
                 else
                     this.accountNumber += "2";
@@ -166,9 +193,9 @@ namespace Parking_Meter
         }
         private void enter3(object sender, RoutedEventArgs e)
         {
-            if (accountNumber.Length < 12)
+            if (accountNumber.Length < 19)
             {
-                if (accountNumber.Length == 3 || accountNumber.Length == 7)
+                if (accountNumber.Length == 4 || accountNumber.Length == 9 || accountNumber.Length == 14)
                     this.accountNumber += "-3";
                 else
                     this.accountNumber += "3";
@@ -177,9 +204,9 @@ namespace Parking_Meter
         }
         private void enter4(object sender, RoutedEventArgs e)
         {
-            if (accountNumber.Length < 12)
+            if (accountNumber.Length < 19)
             {
-                if (accountNumber.Length == 3 || accountNumber.Length == 7)
+                if (accountNumber.Length == 4 || accountNumber.Length == 9 || accountNumber.Length == 14)
                     this.accountNumber += "-4";
                 else
                     this.accountNumber += "4";
@@ -188,9 +215,9 @@ namespace Parking_Meter
         }
         private void enter5(object sender, RoutedEventArgs e)
         {
-            if (accountNumber.Length < 12)
+            if (accountNumber.Length < 19)
             {
-                if (accountNumber.Length == 3 || accountNumber.Length == 7)
+                if (accountNumber.Length == 4 || accountNumber.Length == 9 || accountNumber.Length == 14)
                     this.accountNumber += "-5";
                 else
                     this.accountNumber += "5";
@@ -199,9 +226,9 @@ namespace Parking_Meter
         }
         private void enter6(object sender, RoutedEventArgs e)
         {
-            if (accountNumber.Length < 12)
+            if (accountNumber.Length < 19)
             {
-                if (accountNumber.Length == 3 || accountNumber.Length == 7)
+                if (accountNumber.Length == 4 || accountNumber.Length == 9 || accountNumber.Length == 14)
                     this.accountNumber += "-6";
                 else
                     this.accountNumber += "6";
@@ -210,9 +237,9 @@ namespace Parking_Meter
         }
         private void enter7(object sender, RoutedEventArgs e)
         {
-            if (accountNumber.Length < 12)
+            if (accountNumber.Length < 19)
             {
-                if (accountNumber.Length == 3 || accountNumber.Length == 7)
+                if (accountNumber.Length == 4 || accountNumber.Length == 9 || accountNumber.Length == 14)
                     this.accountNumber += "-7";
                 else
                     this.accountNumber += "7";
@@ -221,9 +248,9 @@ namespace Parking_Meter
         }
         private void enter8(object sender, RoutedEventArgs e)
         {
-            if (accountNumber.Length < 12)
+            if (accountNumber.Length < 19)
             {
-                if (accountNumber.Length == 3 || accountNumber.Length == 7)
+                if (accountNumber.Length == 4 || accountNumber.Length == 9 || accountNumber.Length == 14)
                     this.accountNumber += "-8";
                 else
                     this.accountNumber += "8";
@@ -232,9 +259,9 @@ namespace Parking_Meter
         }
         private void enter9(object sender, RoutedEventArgs e)
         {
-            if (accountNumber.Length < 12)
+            if (accountNumber.Length < 19)
             {
-                if (accountNumber.Length == 3 || accountNumber.Length == 7)
+                if (accountNumber.Length == 4 || accountNumber.Length == 9 || accountNumber.Length == 14)
                     this.accountNumber += "-9";
                 else
                     this.accountNumber += "9";
@@ -246,11 +273,7 @@ namespace Parking_Meter
         {
             if (this.accountNumber.Length > 0)
             {
-                if (this.accountNumber.Length == 5)
-                {
-                    this.accountNumber = this.accountNumber.Remove(this.accountNumber.Length - 2);
-                }
-                else if (this.accountNumber.Length == 9)
+                if (this.accountNumber.Length == 6 || this.accountNumber.Length == 11 || this.accountNumber.Length == 16)
                 {
                     this.accountNumber = this.accountNumber.Remove(this.accountNumber.Length - 2);
                 }
@@ -266,6 +289,139 @@ namespace Parking_Meter
         {
             NumberBox.Text = accountNumber;
         }
+        //PinText.Text == name of textbox we are looking at
+        private void ONE(object sender, RoutedEventArgs e)
+        {
+            if(this.PIN.Length < 4)
+            { 
+                this.PIN += "1";
+                updatePin();
+            }
+        }
+        private void TWO(object sender, RoutedEventArgs e)
+        {
+            if (this.PIN.Length < 4)
+            {
+                this.PIN += "2";
+                updatePin();
+            }
+        }
+        private void THREE(object sender, RoutedEventArgs e)
+        {
+            if (this.PIN.Length < 4)
+            {
+                this.PIN += "3";
+                updatePin();
+            }
+        }
+        private void FOUR(object sender, RoutedEventArgs e)
+        {
+            if (this.PIN.Length < 4)
+            {
+                this.PIN += "4";
+                updatePin();
+            }
+        }
+        private void FIVE(object sender, RoutedEventArgs e)
+        {
+            if (this.PIN.Length < 4)
+            {
+                this.PIN += "5";
+                updatePin();
+            }
+        }
+        private void SIX(object sender, RoutedEventArgs e)
+        {
+            if (this.PIN.Length < 4)
+            {
+                this.PIN += "6";
+                updatePin();
+            }
+        }
+        private void SEVEN(object sender, RoutedEventArgs e)
+        {
+            if (this.PIN.Length < 4)
+            {
+                this.PIN += "7";
+                updatePin();
+            }
+        }
+        private void EIGHT(object sender, RoutedEventArgs e)
+        {
+            if (this.PIN.Length < 4)
+            {
+                this.PIN += "8";
+                updatePin();
+            }
+        }
+        private void NINE(object sender, RoutedEventArgs e)
+        {
+            if (this.PIN.Length < 4)
+            {
+                this.PIN += "9";
+                updatePin();
+            }
+        }
+        private void ZERO(object sender, RoutedEventArgs e)
+        {
+            if (this.PIN.Length < 4)
+            {
+                this.PIN += "0";
+                updatePin();
+            }
+        }
+        private void DELETE(object sender, RoutedEventArgs e)
+        {
+            if (this.PIN.Length > 0)
+            {
+                this.PIN = this.PIN.Remove(this.PIN.Length - 1);
+                updatePin();
+            }
+        }
+        private async void ENTER(object sender, RoutedEventArgs e)
+        {
+            await checkPin();
+            if (this.PIN.Length == 4 && correctPin)
+            {
+                this.correctPin = false;
+                this.Frame.Navigate(typeof(PaymentSuccessPage));
+            }
+        }
+        private void updatePin()
+        {
+            PinText.Text = this.PIN;
+        }
+        private async Task checkPin()
+        {
+            //METHOD TO READ FOR FILE!
+            Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            Windows.Storage.StorageFile sampleFile = await storageFolder.GetFileAsync("users.txt");
+            string text = await Windows.Storage.FileIO.ReadTextAsync(sampleFile);
 
+            if (text.Substring(0, 19).Equals(this.accountNumber))
+            {
+                if (text.Substring(20, 4).Equals(this.PIN))
+                {
+                    this.correctPin = true;
+                }
+                else { PinText.Text = text.Substring(21, 4); }
+            }
+            if (text.Substring(41, 19).Equals(this.accountNumber))
+            {
+                if (text.Substring(61, 4).Equals(this.PIN))
+                {
+                    this.correctPin = true;
+                }
+                else { PinText.Text = text.Substring(62, 4); }
+            }
+            if (text.Substring(80, 19).Equals(this.accountNumber))
+            {
+                if (text.Substring(103, 4).Equals(this.PIN))
+                {
+                    this.correctPin = true;
+                }
+                else { PinText.Text = text.Substring(103, 4); }
+            }
+        }
     }
 }

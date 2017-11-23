@@ -22,13 +22,53 @@
                 Height="80" Width="200" 
                 Opacity="1" 
                 Click="goHelp"/>
-        
+
         <Button x:Name="proceed" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
                 Height="70" Width="160" 
                 Margin="-820,230,-900,0"
                 Opacity="1" 
-                Click="goFinal"/>
+                Click="goFinal">
+            <FlyoutBase.AttachedFlyout>
+                <Flyout>
+                    <Grid Height="600" Width="300">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Text="Please Enter PIN" Grid.ColumnSpan="3" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        <Button x:Name="PinOne" Grid.Column="0" Grid.Row="1" Height="100" Width="100" Content="1" FontSize="48" Click="ONE"/>
+                        <Button x:Name="PinTwo" Grid.Column="1" Grid.Row="1" Height="100" Width="100" Content="2" FontSize="48" Click="TWO"/>
+                        <Button x:Name="PinThree" Grid.Column="2" Grid.Row="1" Height="100" Width="100" Content="3" FontSize="48" Click="THREE"/>
+
+                        <Button x:Name="PinFour" Grid.Column="0" Grid.Row="2" Height="100" Width="100" Content="4" FontSize="48" Click="FOUR"/>
+                        <Button x:Name="PinFive" Grid.Column="1" Grid.Row="2" Height="100" Width="100" Content="5" FontSize="48" Click="FIVE"/>
+                        <Button x:Name="PinSix" Grid.Column="2" Grid.Row="2" Height="100" Width="100" Content="6" FontSize="48" Click="SIX"/>
+
+                        <Button x:Name="PinSeven" Grid.Column="0" Grid.Row="3" Height="100" Width="100" Content="7" FontSize="48" Click="SEVEN"/>
+                        <Button x:Name="PinEight" Grid.Column="1" Grid.Row="3" Height="100" Width="100" Content="8" FontSize="48" Click="EIGHT"/>
+                        <Button x:Name="PinNine" Grid.Column="2" Grid.Row="3" Height="100" Width="100" Content="9" FontSize="48" Click="NINE"/>
+
+                        <Button x:Name="Zero" Grid.Column="0" Grid.Row="4" Height="100" Width="100" Content="0" FontSize="48" Click="ZERO"/>
+                        <Button x:Name="BackDelete" Grid.Column="1" Grid.Row="4" Height="100" Width="100" Content="Delete" FontSize="25" Click="DELETE"/>
+                        <Button x:Name="Accept" Grid.Column="2" Grid.Row="4" Height="100" Width="100" Content="Enter" FontSize="30" Click="ENTER"/>
+
+                        <TextBlock x:Name="PinText" Text="" Grid.Row="5" Grid.ColumnSpan="3" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </Flyout>
+            </FlyoutBase.AttachedFlyout>
+        </Button>
 
         <Button x:Name="b0" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 
@@ -90,16 +130,21 @@
                 Margin="100,290,315,200"
                 Opacity="1" 
                 Click="enter9"/>
-        <TextBlock x:Name="NumberBox" HorizontalAlignment="Left" Margin="650,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="107" Width="708" FontSize="72"/>
-        <TextBlock x:Name="AmounttoPay" HorizontalAlignment="Left" Margin="650,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="107" Width="708" FontSize="72"/>
+        <TextBlock x:Name="NumberBox" 
+                   HorizontalAlignment="Left" 
+                   Margin="300,540,0,0" 
+                   TextWrapping="Wrap" Text="" 
+                   VerticalAlignment="Top" 
+                   Height="107" Width="708" 
+                   FontSize="40"/>
+        <TextBlock x:Name="AmounttoPay" HorizontalAlignment="Left" Margin="870,329,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="107" Width="708" FontSize="60" Foreground="White"/>
         <Button x:Name="RemoveChar" 
                 HorizontalAlignment="Center" 
                 Margin="105,440,315,200"
                  
                 Width="70" Height="55" 
                 Click="RemoveCharFunc"/>
-        
-        
+
         <Button HorizontalAlignment="Left" Height="50" Margin="80,370,0,0" VerticalAlignment="Top" Width="50"
                
                Click="DisplayPromptFileDialog">

@@ -42,7 +42,7 @@ namespace Parking_Meter
 
         private void enter0(object sender, RoutedEventArgs e)
         {
-            if (accountCode.Length < 11)
+            if (accountCode.Length < 11 && (accountCode.Equals("123 456 789") || accountCode.Equals("283 019 493") || accountCode.Equals("864 302 493")))
             {
                 if (accountCode.Length == 3 || accountCode.Length == 7)
                     this.accountCode += " 0";
@@ -179,14 +179,23 @@ namespace Parking_Meter
 
         private void goToConfirm(object sender, RoutedEventArgs e)
         {
-            int[] param = new int[2] { this.mins, this.hours };
-            this.Frame.Navigate(typeof(DeductFromAccount), param);
+            if(this.accountCode.Length == 11)
+            { 
+                int[] param = new int[2] { this.mins, this.hours };
+                this.Frame.Navigate(typeof(DeductFromAccount), param);
+            }
+            else
+            {
+                DisplayErrorCredit(sender, e);
+            }
         }
 
         private void goBack(object sender, RoutedEventArgs e)
         {
-            int[] passArgs = { this.mins, this.hours };
-            this.Frame.Navigate(typeof(ChoosePaymentPage), passArgs);
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.GoBack();
+            //int[] passArgs = { this.mins, this.hours };
+            //this.Frame.Navigate(typeof(ChoosePaymentPage), passArgs);
         }
 
         private void goStart(object sender, RoutedEventArgs e)
@@ -197,6 +206,16 @@ namespace Parking_Meter
         private void goHelp(object sender, RoutedEventArgs e)
         {
 
+        }
+        private async void DisplayErrorCredit(object sender, RoutedEventArgs e)
+        {
+            ContentDialog NumberError = new ContentDialog
+            {
+                Title = "Account number incorrent or too short",
+                Content = "Please re-enter account number",
+                CloseButtonText = "Ok"
+            };
+            ContentDialogResult accountNumber = await NumberError.ShowAsync();
         }
     }
 }

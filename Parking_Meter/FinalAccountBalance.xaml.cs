@@ -35,6 +35,9 @@ namespace Parking_Meter
             accountBalance = (double)e.Parameter;
             AccountBalance.Text = "$ " + accountBalance;
         }
-
+        private void NavigateNext(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(FINALTICKET));
+        }
     }
 }

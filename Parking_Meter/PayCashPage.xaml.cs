@@ -62,12 +62,32 @@ namespace Parking_Meter
 
         private void goPaymentSuccess(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PaymentSuccessPage));
+            if(this.topay <= 0) { 
+                this.Frame.Navigate(typeof(PaymentSuccessPage));
+            }
+            else
+            {
+                DisplayErrorCredit(sender, e);
+            }
         }
+
+        private async void DisplayErrorCredit(object sender, RoutedEventArgs e)
+        {
+            ContentDialog NumberError = new ContentDialog
+            {
+                Title = "Not enough money provided!",
+                Content = "Please add more money into the machine",
+                CloseButtonText = "Ok"
+            };
+            ContentDialogResult accountNumber = await NumberError.ShowAsync();
+        }
+
         private void GoBackAction(object sender, RoutedEventArgs e)
         {
-            int[] passArgs = { this.mins, this.hours };
-            this.Frame.Navigate(typeof(ChoosePaymentPage), passArgs);
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.GoBack();
+            //int[] passArgs = { this.mins, this.hours };
+            //this.Frame.Navigate(typeof(ChoosePaymentPage), passArgs);
         }
         private void Image_Tapped(object sender, TappedRoutedEventArgs e)
         {

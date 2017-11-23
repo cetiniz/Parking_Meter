@@ -20,29 +20,20 @@ namespace Parking_Meter
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class FinalPageConfirmMobile : Page
-    {
-        String phoneNumber;
+    /// 
 
-        public FinalPageConfirmMobile()
+    public sealed partial class FINALTICKET : Page
+    {
+        public FINALTICKET()
         {
             this.InitializeComponent();
+            CurrentTime.Text = string.Format("{0:hh:mm:ss tt}", DateTime.Now);
+            CurrentDate.Text = DateTime.Now.ToString("yyyy-MM-dd");
+
         }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        private void NavigateHome(object sender, RoutedEventArgs e)
         {
-            base.OnNavigatedTo(e);
-            phoneNumber = (String)e.Parameter;
-            NumberBox.Text = phoneNumber;
-        }
-        private void NavigateNext(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(FINALTICKET));
-        }
-        private void goBack(object sender, RoutedEventArgs e)
-        {
-            Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.GoBack();
-            //this.Frame.Navigate(typeof(StartPage));
+            this.Frame.Navigate(typeof(StartPage));
         }
     }
 }

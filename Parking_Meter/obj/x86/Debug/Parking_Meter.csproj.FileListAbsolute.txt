@@ -311,3 +311,8 @@ C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinfor
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinforRefund.g.cs
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinforRefund.xaml
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\EnterPinforRefund.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FINALTICKET.g.i.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FINALTICKET.g.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FINALTICKET.xaml
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FINALTICKET.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\FINALTICKET.xbf

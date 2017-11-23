@@ -24,6 +24,10 @@ namespace Parking_Meter
     {
         int min, hours;
         double price;
+        int PIN;
+
+        int prevHours, prevMins;
+        String newTime;
 
         public AddTimetoTicket()
         {
@@ -44,6 +48,34 @@ namespace Parking_Meter
             var par = (int[])e.Parameter;
             this.min = par[0];
             this.hours = par[1];
+            if (par.Length == 3)
+            {
+                this.PIN = par[2];
+                if (this.PIN == 8765)
+                {
+                    this.prevHours = 2;
+                    this.prevMins = 20;
+                    this.newTime = Convert.ToString(this.prevHours + this.hours) + "Hr " + Convert.ToString(this.prevMins + this.min) + "Min";
+                    currentExpiryTime.Text = "in " + this.prevHours + " hours, " + this.prevMins + " minutes";
+                    expireBox.Text = this.newTime;
+                }
+                else if (this.PIN == 1435)
+                {
+                    this.prevHours = 1;
+                    this.prevMins = 10;
+                    this.newTime = Convert.ToString(this.prevHours + this.hours) + "Hr " + Convert.ToString(this.prevMins + this.min) + "Min";
+                    currentExpiryTime.Text = "in " + this.prevHours + " hours, " + this.prevMins + " minutes";
+                    expireBox.Text = this.newTime;
+                }
+                else if (this.PIN == 9867)
+                {
+                    this.prevHours = 4;
+                    this.prevMins = 40;
+                    this.newTime = Convert.ToString(this.prevHours + this.hours) + "Hr " + Convert.ToString(this.prevMins + this.min) + "Min";
+                    currentExpiryTime.Text = "in " + this.prevHours + " hours, " + this.prevMins + " minutes";
+                    expireBox.Text = this.newTime;
+                }
+            }
 
             computePrice();
             minutesBox.Text = "" + this.min;
@@ -52,7 +84,8 @@ namespace Parking_Meter
 
         private void goBack(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MenuPage));
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.GoBack();
         }
 
         private void goStart(object sender, RoutedEventArgs e)
@@ -85,6 +118,9 @@ namespace Parking_Meter
             computePrice();
             minutesBox.Text = "" + this.min;
             hoursBox.Text = "" + this.hours;
+
+            this.newTime = Convert.ToString(this.prevHours + this.hours) + "Hr " + Convert.ToString(this.prevMins + this.min) + "Min";
+            expireBox.Text = this.newTime;
         }
 
         private void decH(object sender, RoutedEventArgs e)
@@ -94,6 +130,9 @@ namespace Parking_Meter
             computePrice();
             minutesBox.Text = "" + this.min;
             hoursBox.Text = "" + this.hours;
+
+            this.newTime = Convert.ToString(this.prevHours + this.hours) + "Hr " + Convert.ToString(this.prevMins + this.min) + "Min";
+            expireBox.Text = this.newTime;
         }
 
         private void incM(object sender, RoutedEventArgs e)
@@ -103,6 +142,9 @@ namespace Parking_Meter
             computePrice();
             minutesBox.Text = "" + this.min;
             hoursBox.Text = "" + this.hours;
+
+            this.newTime = Convert.ToString(this.prevHours + this.hours) + "Hr " + Convert.ToString(this.prevMins + this.min) + "Min";
+            expireBox.Text = this.newTime;
         }
 
         private void decM(object sender, RoutedEventArgs e)
@@ -113,6 +155,9 @@ namespace Parking_Meter
             computePrice();
             minutesBox.Text = "" + this.min;
             hoursBox.Text = "" + this.hours;
+
+            this.newTime = Convert.ToString(this.prevHours + this.hours) + "Hr " + Convert.ToString(this.prevMins + this.min) + "Min";
+            expireBox.Text = this.newTime;
         }
 
         private void computePrice()

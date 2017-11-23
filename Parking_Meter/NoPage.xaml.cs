@@ -26,7 +26,11 @@ namespace Parking_Meter
         {
             this.InitializeComponent();
         }
+        private void goBack(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(StartPage));
+        }
 
-        
+
     }
 }

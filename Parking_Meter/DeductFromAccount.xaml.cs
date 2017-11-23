@@ -51,8 +51,10 @@ namespace Parking_Meter
         }
         private void goBack(object sender, RoutedEventArgs e)
         {
-            int[] passArgs = { this.mins, this.hours, };
-            this.Frame.Navigate(typeof(CityParkPay), passArgs);
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.GoBack();
+            //int[] passArgs = { this.mins, this.hours, };
+            //this.Frame.Navigate(typeof(CityParkPay), passArgs);
         }
 
         private void goStart(object sender, RoutedEventArgs e)

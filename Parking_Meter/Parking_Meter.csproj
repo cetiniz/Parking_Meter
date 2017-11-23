@@ -122,6 +122,9 @@
     <Compile Include="FinalPageConfirmMobile.xaml.cs">
       <DependentUpon>FinalPageConfirmMobile.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FINALTICKET.xaml.cs">
+      <DependentUpon>FINALTICKET.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PayCashPage.xaml.cs">
       <DependentUpon>PayCashPage.xaml</DependentUpon>
     </Compile>
@@ -183,7 +186,9 @@
     <Content Include="Assets\PayCashPage.png" />
     <Content Include="Assets\pay_with_card-22.png" />
     <Content Include="Assets\Processing-10.png" />
+    <Content Include="Assets\Refund_collect_change-12.png" />
     <Content Include="Assets\refund_ticket-12.png" />
+    <Content Include="Assets\ticket_final-11.png" />
     <Content Include="Assets\YesPage.png" />
     <Content Include="Assets\NoPage.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -237,6 +242,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FinalPageConfirmMobile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FINALTICKET.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

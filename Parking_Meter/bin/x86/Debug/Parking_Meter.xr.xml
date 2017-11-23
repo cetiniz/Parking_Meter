@@ -14,6 +14,16 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="RowDefinitions" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
@@ -34,6 +44,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Opacity" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootEvent Name="Click" />
     </RootType>
@@ -58,6 +69,7 @@
     <RootType FullName="Parking_Meter.EnterPinOnTicket" />
     <RootType FullName="Parking_Meter.FinalAccountBalance" />
     <RootType FullName="Parking_Meter.FinalPageConfirmMobile" />
+    <RootType FullName="Parking_Meter.FINALTICKET" />
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
       <RootMethod Name="GetAttachedFlyout" />
       <RootMethod Name="SetAttachedFlyout" />
@@ -70,6 +82,12 @@
     </RootType>
     <RootType FullName="Parking_Meter.PayCashPage" />
     <RootType FullName="Parking_Meter.NoPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
     <RootType FullName="Parking_Meter.PayWithCard" />
     <RootType FullName="Parking_Meter.Processing" />
     <RootType FullName="Parking_Meter.ProcessingRefund" />
