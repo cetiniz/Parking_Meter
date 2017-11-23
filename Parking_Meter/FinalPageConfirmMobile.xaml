@@ -11,15 +11,10 @@
         <Image x:Name="image" 
                HorizontalAlignment="Left" VerticalAlignment="Top"
                Height="auto"  Width="auto" 
-               Source="Assets/final_page_phone_confirm-20.png">
+               Source="Assets/final_yes-20.png">
         </Image>
 
         <TextBlock x:Name="NumberBox" HorizontalAlignment="Left" Margin="660,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="107" Width="708" FontSize="60" Foreground="White"/>
         <Button x:Name="NavigateTo" HorizontalAlignment="Center" Margin="965,637,0,0" VerticalAlignment="Top" Height="80" Width="310" Click="NavigateNext"/>
-        <Button x:Name="back" Content="" 
-                HorizontalAlignment="Left"  VerticalAlignment="Bottom" 
-                Height="80" Width="250" 
-                Opacity="1" 
-                Click="goBack"/>
     </Grid>
 </Page>

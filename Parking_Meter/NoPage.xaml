@@ -11,13 +11,14 @@
 
         <Image x:Name="image" 
                HorizontalAlignment="Left"
-               Source="/Assets/NoPage.png" 
+               Source="/Assets/final_page_view_ticket-28.png" 
                RenderTransformOrigin="0,0" Margin="0,0,0,0" Height="auto" Width="auto" VerticalAlignment="Top"  />
         <Button x:Name="back" Content="" 
                 HorizontalAlignment="Left"  VerticalAlignment="Bottom" 
-                Height="80" Width="250" 
+                Height="1080" Width="1919" 
                 Opacity="1" 
                 Click="goBack"/>
-        
+        <Button x:Name="NavigateTo" HorizontalAlignment="Center" Margin="965,637,0,0" VerticalAlignment="Top" Height="80" Width="310" Click="NavigateNext"/>
+
     </Grid>
 </Page>

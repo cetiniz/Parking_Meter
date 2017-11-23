@@ -36,8 +36,8 @@ namespace Parking_Meter
             base.OnNavigatedTo(e);
 
             var par = (int[])e.Parameter;
-            this.min = par[0];
-            this.hours = par[1];
+            this.hours = par[0];
+            this.min = par[1];
 
             var price = this.min * 0.05 + this.hours * 60 * 0.05;
             feedback.Text = "The cost of parking for " + hours + " hours, " + min + "min is $ " + price;
@@ -46,8 +46,10 @@ namespace Parking_Meter
 
         private void goBack(object sender, RoutedEventArgs e)
         {
-            int[] param = new int[2] { this.min, this.hours };
-            this.Frame.Navigate(typeof(PurchasePage), param);
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.GoBack();
+            //int[] param = new int[2] { this.hours, this.min };
+            //this.Frame.Navigate(typeof(PurchasePage), param);
         }
 
         private void goStart(object sender, RoutedEventArgs e)
@@ -68,7 +70,7 @@ namespace Parking_Meter
 
         private void goDebitCredit(object sender, RoutedEventArgs e)
         {
-            int[] passArgs = { this.min, this.hours };
+            int[] passArgs = { this.hours, this.min };
             this.Frame.Navigate(typeof(PayWithCard), passArgs);
         }
 

@@ -59,6 +59,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
+      <RootProperty Name="RenderTransform" />
     </RootType>
     <RootType FullName="Parking_Meter.AddTimetoTicket" />
     <RootType FullName="Parking_Meter.BlankPage1" />
@@ -69,6 +70,9 @@
     <RootType FullName="Parking_Meter.EnterPinOnTicket" />
     <RootType FullName="Parking_Meter.FinalAccountBalance" />
     <RootType FullName="Parking_Meter.FinalPageConfirmMobile" />
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
+    </RootType>
     <RootType FullName="Parking_Meter.FINALTICKET" />
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
       <RootMethod Name="GetAttachedFlyout" />
@@ -93,6 +97,7 @@
     <RootType FullName="Parking_Meter.ProcessingRefund" />
     <RootType FullName="Parking_Meter.RefundBarcodeScanner" />
     <RootType FullName="Parking_Meter.RefundTicketChange" />
+    <RootType FullName="Parking_Meter.StartPageFrench" />
     <RootType FullName="Parking_Meter.YesPage" />
     <RootType FullName="Parking_Meter.PurchasePage" />
     <RootType FullName="Parking_Meter.MenuPage" />

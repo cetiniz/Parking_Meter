@@ -24,6 +24,8 @@ namespace Parking_Meter
 
     public sealed partial class FINALTICKET : Page
     {
+        String timeBought;
+        int hours, mins;
         public FINALTICKET()
         {
             this.InitializeComponent();
@@ -34,6 +36,19 @@ namespace Parking_Meter
         private void NavigateHome(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(StartPage));
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            var minsHours = (int[])e.Parameter;
+            this.hours = minsHours[0];
+            this.mins = minsHours[1];
+
+            Cost.Text = "$" + Convert.ToString(this.hours * 60 * 0.05 + this.mins * 0.05);
+
+            DateTime temp = DateTime.Now.AddMinutes(this.mins+this.hours*60);
+
+            ExpireTime.Text = string.Format("{0:hh:mm:ss tt}", temp); 
         }
     }
 }

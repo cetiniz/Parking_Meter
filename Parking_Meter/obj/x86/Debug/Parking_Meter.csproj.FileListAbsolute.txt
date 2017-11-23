@@ -316,3 +316,8 @@ C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FINALTICKET
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FINALTICKET.xaml
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\FINALTICKET.xbf
 C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\FINALTICKET.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\StartPageFrench.g.i.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\StartPageFrench.g.cs
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\StartPageFrench.xaml
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\obj\x86\Debug\StartPageFrench.xbf
+C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\bin\x86\Debug\StartPageFrench.xbf

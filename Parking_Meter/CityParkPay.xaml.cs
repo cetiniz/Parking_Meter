@@ -181,7 +181,7 @@ namespace Parking_Meter
         {
             if(this.accountCode.Length == 11)
             { 
-                int[] param = new int[2] { this.mins, this.hours };
+                int[] param = new int[2] {this.hours,this.mins };
                 this.Frame.Navigate(typeof(DeductFromAccount), param);
             }
             else

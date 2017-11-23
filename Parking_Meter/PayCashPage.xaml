@@ -13,7 +13,7 @@
         <Image x:Name="image" 
                HorizontalAlignment="Left" VerticalAlignment="Top"
                Height="auto"  Width="auto" 
-               Source="Assets/PayCashPage.png">
+               Source="Assets/pay_cash_change_due-11.png">
         </Image>
 
         <Button x:Name="cancel" Content="" 
@@ -39,6 +39,12 @@
                    Foreground="White" FontFamily="Segoe UI Light" FontSize="60"
                    HorizontalAlignment="Left" VerticalAlignment="Top"
                    Margin="368,365,0,0" TextWrapping="Wrap" />
+        
+        <TextBlock x:Name="ChangeDue"
+                   Width="500" Height="80"
+                   Foreground="White" FontFamily="Segoe UI Light" FontSize="60"
+                   HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Margin="368,490,0,0" TextWrapping="Wrap" />
 
         <Button x:Name="proceed" Content="" 
                 HorizontalAlignment="Center"  VerticalAlignment="Center" 

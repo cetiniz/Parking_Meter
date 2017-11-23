@@ -23,6 +23,7 @@ namespace Parking_Meter
     public sealed partial class YesPage : Page
     {
         String phoneNumber = "";
+        int hours, mins;
 
         public YesPage()
         {
@@ -38,10 +39,25 @@ namespace Parking_Meter
         {
 
         }
-        private void goFinal(object sender, RoutedEventArgs e)
+        private async void goFinal(object sender, RoutedEventArgs e)
         {
-            String phoneNumber = this.phoneNumber;
-            this.Frame.Navigate(typeof(FinalPageConfirmMobile), phoneNumber);
+            if(this.phoneNumber.Length == 12)
+            { 
+                int[] args = { this.hours, this.mins, Convert.ToInt32(phoneNumber.Replace("-", "").Substring(0,3)),
+                Convert.ToInt32(phoneNumber.Replace("-", "").Substring(3,3)),
+                Convert.ToInt32(phoneNumber.Replace("-", "").Substring(6,4))};
+                this.Frame.Navigate(typeof(FinalPageConfirmMobile), args);
+            }
+            else
+            {
+                ContentDialog promptFileDialog = new ContentDialog
+                {
+                    Title = "Phone Number too Short",
+                    Content = "Please enter a 7 digit phone number",
+                    CloseButtonText = "OK"
+                };
+                ContentDialogResult result = await promptFileDialog.ShowAsync();
+            }
         }
 
 
@@ -178,6 +194,14 @@ namespace Parking_Meter
         private void updateString()
         {
             NumberBox.Text = phoneNumber;
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            var minsHours = (int[])e.Parameter;
+            this.hours = minsHours[0];
+            this.mins = minsHours[1];
         }
     }
 }

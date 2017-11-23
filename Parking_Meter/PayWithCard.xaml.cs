@@ -28,6 +28,7 @@ namespace Parking_Meter
         String accountNumber;
         String PIN;
         bool correctPin;
+        bool fromSwipe = false;
 
         public PayWithCard()
         {
@@ -75,14 +76,28 @@ namespace Parking_Meter
 
         private void goFinal(object sender, RoutedEventArgs e)
         {
-
-            if (this.accountNumber.Length == 19)
+            if (fromSwipe)
             {
-                FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+                if (this.accountNumber.Length == 4)
+                {
+                    int[] args = { this.hours, this.mins };
+                    this.Frame.Navigate(typeof(PaymentSuccessPage), args);
+                }
+                else
+                {
+                    DisplayErrorPIN(sender, e);
+                }
             }
             else
             {
-                DisplayErrorCredit(sender,e);
+                if (this.accountNumber.Length == 19)
+                {
+                    FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+                }
+                else
+                {
+                    DisplayErrorCredit(sender, e);
+                }
             }
         }
         private async void DisplayErrorCredit(object sender, RoutedEventArgs e)
@@ -91,6 +106,16 @@ namespace Parking_Meter
             {
                 Title = "Account Number Incorrect or too Short!",
                 Content = "Please retype account number",
+                CloseButtonText = "Ok"
+            };
+            ContentDialogResult accountNumber = await NumberError.ShowAsync();
+        }
+        private async void DisplayErrorPIN(object sender, RoutedEventArgs e)
+        {
+            ContentDialog NumberError = new ContentDialog
+            {
+                Title = "PIN Incorrect!",
+                Content = "Please retype PIN number",
                 CloseButtonText = "Ok"
             };
             ContentDialogResult accountNumber = await NumberError.ShowAsync();
@@ -120,9 +145,14 @@ namespace Parking_Meter
                 {
                     Title = "Credit Selected",
 
-                    CloseButtonText = "Please enter PIN on keypad"
+                    PrimaryButtonText = "Please enter PIN on keypad"
                 };
                 ContentDialogResult credit = await creditChoice.ShowAsync();
+
+                if (credit == ContentDialogResult.Primary)
+                {
+                    this.fromSwipe = true;
+                }
             }
             else
             {
@@ -140,9 +170,14 @@ namespace Parking_Meter
                     {
                         Title = "Chequing account Selected",
                         //Content = "Please Procedure to enter Pin!",
-                        CloseButtonText = "Please enter PIN on keypad"
+                        PrimaryButtonText = "Please enter PIN on keypad"
                     };
-                    ContentDialogResult credit = await chequeing.ShowAsync();
+                    ContentDialogResult chequingAcc = await chequeing.ShowAsync();
+
+                    if (chequingAcc == ContentDialogResult.Primary)
+                    {
+                        this.fromSwipe = true;
+                    }
                 }
                 else
                 {
@@ -150,9 +185,14 @@ namespace Parking_Meter
                     {
                         Title = "Savings account Selected",
                         //Content = "Please Procedure to enter Pin!",
-                        CloseButtonText = "Please enter PIN on keypad"
+                        PrimaryButtonText = "Please enter PIN on keypad"
                     };
                     ContentDialogResult savingAcc = await savings.ShowAsync();
+
+                    if (savingAcc == ContentDialogResult.Primary)
+                    {
+                        this.fromSwipe = true;
+                    }
                 }
             }
         }
@@ -384,7 +424,8 @@ namespace Parking_Meter
             if (this.PIN.Length == 4 && correctPin)
             {
                 this.correctPin = false;
-                this.Frame.Navigate(typeof(PaymentSuccessPage));
+                int[] args = { this.hours, this.mins };
+                this.Frame.Navigate(typeof(PaymentSuccessPage),args);
             }
         }
         private void updatePin()

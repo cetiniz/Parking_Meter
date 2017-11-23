@@ -47,6 +47,7 @@ namespace Parking_Meter
             this.mins = minsHours[1];
             topayBox.Text = "$ " + this.topay;
             paidBox.Text = "$ " + this.paid;
+            ChangeDue.Text = "$" + change;
         }
 
 
@@ -62,8 +63,9 @@ namespace Parking_Meter
 
         private void goPaymentSuccess(object sender, RoutedEventArgs e)
         {
-            if(this.topay <= 0) { 
-                this.Frame.Navigate(typeof(PaymentSuccessPage));
+            if(this.topay <= 0) {
+                int[] args = { this.hours, this.mins };
+                this.Frame.Navigate(typeof(PaymentSuccessPage), args);
             }
             else
             {
@@ -106,9 +108,11 @@ namespace Parking_Meter
             if (this.topay == 0 && this.paid == this.constant_pay)
             {
                 //this.Frame.Navigate(typeof(PaymentSuccessPage));
-            } else if (this.topay < 0 && this.paid == 0)
+            } else if (this.topay < 0)
             {
                 change = -1 * topay;
+                ChangeDue.Text = "$" + change;
+                topayBox.Text = "$ " + 0;
             }
         }
         private void DimeP(object sender, RoutedEventArgs e)
@@ -123,9 +127,11 @@ namespace Parking_Meter
             {
                 //this.Frame.Navigate(typeof(PaymentSuccessPage));
             }
-            else if (this.topay < 0 && this.paid == 0)
+            else if (this.topay < 0)
             {
                 change = -1 * topay;
+                ChangeDue.Text = "$" + change;
+                topayBox.Text = "$ " + 0;
             }
         }
 
@@ -141,9 +147,11 @@ namespace Parking_Meter
             {
                 // this.Frame.Navigate(typeof(PaymentSuccessPage));
             }
-            else if (this.topay < 0 && this.paid == 0)
+            else if (this.topay < 0)
             {
                 change = -1 * topay;
+                ChangeDue.Text = "$" + change;
+                topayBox.Text = "$ " + 0;
             }
         }
 
@@ -159,9 +167,11 @@ namespace Parking_Meter
             {
                 //this.Frame.Navigate(typeof(PaymentSuccessPage));
             }
-            else if (this.topay < 0 && this.paid == 0)
+            else if (this.topay < 0)
             {
                 change = -1 * topay;
+                ChangeDue.Text = "$" + change;
+                topayBox.Text = "$ " + 0;
             }
         }
 
@@ -177,9 +187,11 @@ namespace Parking_Meter
             {
                 //this.Frame.Navigate(typeof(PaymentSuccessPage));
             }
-            else if (this.topay < 0 && this.paid == 0)
+            else if (this.topay < 0)
             {
                 change = -1 * topay;
+                ChangeDue.Text = "$" + change;
+                topayBox.Text = "$ " + 0;
             }
         }
 
@@ -200,9 +212,11 @@ namespace Parking_Meter
             {
                 //this.Frame.Navigate(typeof(PaymentSuccessPage));
             }
-            else if (this.topay < 0 && this.paid == 0)
+            else if (this.topay < 0)
             {
                 change = -1 * topay;
+                ChangeDue.Text = "$" + change;
+                topayBox.Text = "$ " + 0;
             }
         }
         private void Bill10(object sender, RoutedEventArgs e)
@@ -217,9 +231,11 @@ namespace Parking_Meter
             {
                 //this.Frame.Navigate(typeof(PaymentSuccessPage));
             }
-            else if (this.topay < 0 && this.paid == 0)
+            else if (this.topay < 0)
             {
                 change = -1 * topay;
+                ChangeDue.Text = "$" + change;
+                topayBox.Text = "$ " + 0;
             }
         }
 
@@ -235,9 +251,11 @@ namespace Parking_Meter
             {
                 //this.Frame.Navigate(typeof(PaymentSuccessPage));
             }
-            else if (this.topay < 0 && this.paid == 0)
+            else if (this.topay < 0)
             {
                 change = -1 * topay;
+                ChangeDue.Text = "$" + change;
+                topayBox.Text = "$ " + 0;
             }
         }
 
@@ -248,14 +266,17 @@ namespace Parking_Meter
 
             paidBox.Text = "$ " + this.paid;
             topayBox.Text = "$ " + this.topay;
+            
 
             if (this.topay == 0 && this.paid == this.constant_pay)
             {
                 //this.Frame.Navigate(typeof(PaymentSuccessPage));
             }
-            else if (this.topay < 0 && this.paid == 0)
+            else if (this.topay < 0)
             {
                 change = -1 * topay;
+                ChangeDue.Text = "$" + change;
+                topayBox.Text = "$ " + 0;
             }
         }
 
@@ -271,9 +292,11 @@ namespace Parking_Meter
             {
                 //this.Frame.Navigate(typeof(PaymentSuccessPage));
             }
-            else if (this.topay < 0 && this.paid == 0)
+            else if (this.topay < 0)
             {
                 change = -1 * topay;
+                ChangeDue.Text = "$" + change;
+                topayBox.Text = "$ " + 0;
             }
         }
 

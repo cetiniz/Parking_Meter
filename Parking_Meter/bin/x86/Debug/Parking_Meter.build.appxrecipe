@@ -394,8 +394,20 @@
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\final_page_phone_confirm-20.png">
       <PackagePath>Assets\final_page_phone_confirm-20.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Final_page_view_ticket-28.png">
+      <PackagePath>Assets\Final_page_view_ticket-28.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\final_yes-20.png">
+      <PackagePath>Assets\final_yes-20.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\Home_screen_French-27.png">
+      <PackagePath>Assets\Home_screen_French-27.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\PayCashPage.png">
       <PackagePath>Assets\PayCashPage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\pay_cash_change_due-11.png">
+      <PackagePath>Assets\pay_cash_change_due-11.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Zach\source\repos\Parking_Meter\Parking_Meter\Assets\pay_with_card-22.png">
       <PackagePath>Assets\pay_with_card-22.png</PackagePath>
