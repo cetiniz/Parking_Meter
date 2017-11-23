@@ -22,6 +22,7 @@ namespace Parking_Meter
     /// </summary>
     public sealed partial class PaymentSuccessPage : Page
     {
+        int hours, mins;
         public PaymentSuccessPage()
         {
             this.InitializeComponent();
@@ -31,15 +32,23 @@ namespace Parking_Meter
         {
             
         }
-
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            var minsHours = (int[])e.Parameter;
+            this.hours = minsHours[0];
+            this.mins = minsHours[1];
+        }
         private void goYes(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(YesPage));
+            int[] args = { this.hours, this.mins };
+            this.Frame.Navigate(typeof(YesPage), args);
         }
 
         private void goNo(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(NoPage));
+            int[] args = { this.hours, this.mins };
+            this.Frame.Navigate(typeof(NoPage), args);
         }
     }
 }

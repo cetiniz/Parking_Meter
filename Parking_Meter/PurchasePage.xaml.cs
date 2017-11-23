@@ -67,7 +67,7 @@ namespace Parking_Meter
 
         private void goChoosePayment(object sender, RoutedEventArgs e)
         {
-            int[] param = new int[2] { this.min, this.hours };
+            int[] param = new int[2] { this.hours, this.min };
             this.Frame.Navigate(typeof(ChoosePaymentPage), param);
         }
 

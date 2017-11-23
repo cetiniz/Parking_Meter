@@ -22,6 +22,7 @@ namespace Parking_Meter
     /// </summary>
     public sealed partial class NoPage : Page
     {
+        int hours, mins;
         public NoPage()
         {
             this.InitializeComponent();
@@ -30,7 +31,17 @@ namespace Parking_Meter
         {
             this.Frame.Navigate(typeof(StartPage));
         }
-
-
+        private void NavigateNext(object sender, RoutedEventArgs e)
+        {
+            int[] args = { this.hours, this.mins };
+            this.Frame.Navigate(typeof(FINALTICKET), args);
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            var minsHours = (int[])e.Parameter;
+            this.hours = minsHours[0];
+            this.mins = minsHours[1];
+        }
     }
 }

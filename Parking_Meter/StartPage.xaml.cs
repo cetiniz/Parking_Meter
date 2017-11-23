@@ -56,5 +56,9 @@ namespace Parking_Meter
         {
             this.Frame.Navigate(typeof(MenuPage));
         }
+        private void ChangeLang(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(StartPageFrench));
+        }
     }
 }

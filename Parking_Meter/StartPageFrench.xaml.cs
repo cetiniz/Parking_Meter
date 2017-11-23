@@ -20,30 +20,15 @@ namespace Parking_Meter
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class FinalAccountBalance : Page
+    public sealed partial class StartPageFrench : Page
     {
-        double accountBalance;
-        int hours, mins;
-
-        public FinalAccountBalance()
+        public StartPageFrench()
         {
             this.InitializeComponent();
         }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        private void GoEnglish(object sender, RoutedEventArgs e)
         {
-            base.OnNavigatedTo(e);
-            var accountBalance = (int[])e.Parameter;
-            this.hours = accountBalance[0];
-            this.mins = accountBalance[1];
-            if (accountBalance.Length > 2) { 
-                AccountBalance.Text = "$ " + accountBalance[2];
-            }
-        }
-        private void NavigateNext(object sender, RoutedEventArgs e)
-        {
-            int[] args = { this.hours, this.mins };
-            this.Frame.Navigate(typeof(FINALTICKET),args);
+            this.Frame.Navigate(typeof(StartPage));
         }
     }
 }

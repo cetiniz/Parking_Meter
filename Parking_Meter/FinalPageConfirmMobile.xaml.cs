@@ -23,7 +23,7 @@ namespace Parking_Meter
     public sealed partial class FinalPageConfirmMobile : Page
     {
         String phoneNumber;
-
+        int hours, mins;
         public FinalPageConfirmMobile()
         {
             this.InitializeComponent();
@@ -31,12 +31,19 @@ namespace Parking_Meter
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            phoneNumber = (String)e.Parameter;
-            NumberBox.Text = phoneNumber;
+            var minsHours = (int[])e.Parameter;
+            this.hours = minsHours[0];
+            this.mins = minsHours[1];
+            if(minsHours.Length > 2)
+            {
+                this.phoneNumber = Convert.ToString(minsHours[2]) + " " + Convert.ToString(minsHours[3]) + " " + Convert.ToString(minsHours[4]);
+            }
+            NumberBox.Text = this.phoneNumber;
         }
         private void NavigateNext(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(FINALTICKET));
+            int[] args = { this.hours, this.mins };
+            this.Frame.Navigate(typeof(FINALTICKET),args);
         }
         private void goBack(object sender, RoutedEventArgs e)
         {
@@ -44,5 +51,6 @@ namespace Parking_Meter
             rootFrame.GoBack();
             //this.Frame.Navigate(typeof(StartPage));
         }
+
     }
 }

@@ -40,14 +40,14 @@ namespace Parking_Meter
             this.hours = minsHours[0];
             this.mins = minsHours[1];
             amountToBeDeducted.Text = "$ " + this.topay;
-            accountBalance.Text = "$ " + (this.topay + 4.56);
-            this.balanceRemaining = 4.56;
+            accountBalance.Text = "$ " + (this.topay + 5.00);
+            this.balanceRemaining = 5.00;
         }
 
         private void confirmAccountDeduction(object sender, RoutedEventArgs e)
         {
-            double balanceRemaining = this.balanceRemaining;
-            this.Frame.Navigate(typeof(FinalAccountBalance), balanceRemaining);
+            int[] args = { this.hours, this.mins, Convert.ToInt32(this.balanceRemaining) };
+            this.Frame.Navigate(typeof(FinalAccountBalance), args);
         }
         private void goBack(object sender, RoutedEventArgs e)
         {

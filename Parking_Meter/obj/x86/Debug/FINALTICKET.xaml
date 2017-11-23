@@ -16,7 +16,17 @@
                Source="Assets/ticket_final-11.png"/>
         <TextBlock x:ConnectionId='2' x:Name="CurrentTime" HorizontalAlignment="Left" Margin="750,412,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="86" Width="374" FontSize="35"/>
         <TextBlock x:ConnectionId='3' x:Name="CurrentDate" HorizontalAlignment="Left" Margin="750,365,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="86" Width="374" FontSize="35"/>
-        <Button x:ConnectionId='4' Width="1910" Height="1070" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0"                     />
+        <TextBlock x:ConnectionId='4' x:Name="ExpireTime" HorizontalAlignment="Left" Margin="690,460,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="86" Width="374" FontSize="35"/>
+        <TextBlock x:ConnectionId='5' x:Name="PIN" 
+                   Text="1435" 
+                   HorizontalAlignment="Left" Margin="1070,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="86" Width="374" FontSize="55" >
+            <TextBlock.RenderTransform>
+                <RotateTransform Angle="-90"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='6' x:Name="Cost" HorizontalAlignment="Left" Margin="215,400,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="86" Width="374" FontSize="50"/>
+
+        <Button x:ConnectionId='7' Width="1910" Height="1070" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0"                     />
     </Grid>
 </Page>
 

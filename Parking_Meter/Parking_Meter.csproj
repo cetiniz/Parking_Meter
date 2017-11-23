@@ -146,6 +146,9 @@
     <Compile Include="RefundTicketChange.xaml.cs">
       <DependentUpon>RefundTicketChange.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StartPageFrench.xaml.cs">
+      <DependentUpon>StartPageFrench.xaml</DependentUpon>
+    </Compile>
     <Compile Include="YesPage.xaml.cs">
       <DependentUpon>YesPage.xaml</DependentUpon>
     </Compile>
@@ -183,7 +186,11 @@
     <Content Include="Assets\Enter_pin_on_ticket-26.png" />
     <Content Include="Assets\final_account_balance-06.png" />
     <Content Include="Assets\final_page_phone_confirm-20.png" />
+    <Content Include="Assets\Final_page_view_ticket-28.png" />
+    <Content Include="Assets\final_yes-20.png" />
+    <Content Include="Assets\Home_screen_French-27.png" />
     <Content Include="Assets\PayCashPage.png" />
+    <Content Include="Assets\pay_cash_change_due-11.png" />
     <Content Include="Assets\pay_with_card-22.png" />
     <Content Include="Assets\Processing-10.png" />
     <Content Include="Assets\Refund_collect_change-12.png" />
@@ -274,6 +281,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RefundTicketChange.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StartPageFrench.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
